@@ -1,0 +1,5745 @@
+[
+  {
+    "id": "L0-01",
+    "level": "L0",
+    "index": 1,
+    "title": {
+      "zh": "三门认牌",
+      "en": "Three suits"
+    },
+    "goal": {
+      "zh": "认识四川麻将只用的三门牌，并能区分牌面。",
+      "en": "Recognize the three suits used in Sichuan Mahjong and distinguish their tiles."
+    },
+    "duration": 5,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:sichuan-mahjong]] 只用三门：[[term:dots]]、[[term:bamboo]]、[[term:characters]]。每门 1 到 9，每张有 4 张，所以一副牌是 108 张；没有风牌、箭牌这些 [[term:honor-tiles]]。",
+          "en": "[[term:sichuan-mahjong]] uses three suits only: [[term:dots]], [[term:bamboo]], and [[term:characters]]. Each suit has ranks 1 through 9 with four copies, making 108 tiles; there are no [[term:honor-tiles]] such as winds or dragons."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "双语标签可以帮助对照；先看清万、条、筒的牌面差异，不需要背英文名称。",
+          "en": "Bilingual labels are available for reference. First recognize the visual difference between Characters, Bamboo, and Dots; memorizing English names is not required."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "三门牌样",
+          "en": "Three suit samples"
+        },
+        "body": {
+          "zh": "这组牌各来自一门：5 筒、3 条、7 万。",
+          "en": "This set shows one tile from each suit: 5 Dots, 3 Bamboo, and 7 Characters."
+        },
+        "tiles": [
+          "5p",
+          "3t",
+          "7w"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L0-01-q1",
+        "prompt": {
+          "zh": "四川麻将核心规则使用多少张牌？",
+          "en": "How many tiles are used in this Sichuan Mahjong ruleset?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "108 张",
+              "en": "108 tiles"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "136 张",
+              "en": "136 tiles"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "144 张",
+              "en": "144 tiles"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "三门 1–9 各 4 张，36 张 × 3 门 = 108 张。",
+          "en": "Three suits, ranks 1 to 9, four copies each: 36 tiles per suit, 108 total."
+        },
+        "terms": [
+          "sichuan-mahjong",
+          "dots",
+          "bamboo",
+          "characters"
+        ]
+      },
+      {
+        "id": "L0-01-q2",
+        "prompt": {
+          "zh": "四川麻将核心使用哪三门牌？",
+          "en": "Which three suits are used in the core Sichuan Mahjong ruleset?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "万、条、筒",
+              "en": "Characters, Bamboo, and Dots"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "万、风、箭",
+              "en": "Characters, Winds, and Dragons"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "条、花、季",
+              "en": "Bamboo, Flowers, and Seasons"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "本应用只用万、条、筒三门，共 108 张，没有字牌。",
+          "en": "This app uses Characters, Bamboo, and Dots only: 108 tiles and no honor tiles."
+        },
+        "terms": [
+          "bamboo",
+          "dots",
+          "characters"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L0-02",
+    "level": "L0",
+    "index": 2,
+    "title": {
+      "zh": "定缺",
+      "en": "Voiding a suit"
+    },
+    "goal": {
+      "zh": "理解定缺的作用，并能判断手牌是否已经打缺该门。",
+      "en": "Understand voiding a suit and judge whether a hand has cleared its declared void suit."
+    },
+    "duration": 6,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:void-suit]] 是四川麻将的核心：开局声明一门作为 [[term:declared-void-suit]]，之后要把这门打出去。到 [[term:win]] 时，手牌必须已经 [[term:one-suit-missing]]。",
+          "en": "[[term:void-suit]] is central to Sichuan Mahjong: at the start you declare one [[term:declared-void-suit]] and work to discard it. By the time you [[term:win]], that suit must be [[term:one-suit-missing]]."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "还没打缺定缺门，就不能算合格胡牌；本期只判断是否缺门，不写平台罚分。",
+          "en": "If the declared void suit is still present, the hand is not ready to qualify as a win; Phase 1 only checks the cleared-suit condition, not platform penalties."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "定缺万",
+          "en": "Voiding Characters"
+        },
+        "body": {
+          "zh": "本局定缺万，这组牌里还有 7 万，所以还没有打缺。",
+          "en": "Characters are declared void here. Because 7 Characters is still present, the hand has not cleared the void suit."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "5t",
+          "6t",
+          "7w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L0-02-q1",
+        "prompt": {
+          "zh": "定缺万时，哪组牌已经打缺？",
+          "en": "If Characters are void, which set has cleared the void suit?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "2筒 3筒 4条 6条",
+              "en": "2 Dots, 3 Dots, 4 Bamboo, 6 Bamboo"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "2筒 3万 4条 6条",
+              "en": "2 Dots, 3 Characters, 4 Bamboo, 6 Bamboo"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "定缺万时，手里不能再有万。",
+          "en": "When Characters are void, no Characters should remain in the hand."
+        },
+        "terms": [
+          "void-suit",
+          "one-suit-missing",
+          "characters"
+        ]
+      },
+      {
+        "id": "L0-02-q2",
+        "prompt": {
+          "zh": "定缺万后，第一优先级通常是什么？",
+          "en": "After voiding Characters, what is usually the first priority?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "尽快打完手里的万",
+              "en": "Clear the Characters still in hand"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "一直保留万",
+              "en": "Keep all Characters"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "同时保留三门",
+              "en": "Keep all three suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "胡牌前必须缺一门；定缺万后要尽快打掉手里的万。",
+          "en": "A winning hand must be missing one suit, so declared Characters should be cleared first."
+        },
+        "terms": [
+          "void-suit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L0-03",
+    "level": "L0",
+    "index": 3,
+    "title": {
+      "zh": "碰与杠，不可吃",
+      "en": "Pung, Kong, and no Chow"
+    },
+    "goal": {
+      "zh": "区分碰、杠、吃，并记住四川麻将不可吃。",
+      "en": "Distinguish Pung, Kong, and Chow, and remember that Chow cannot be claimed in Sichuan Mahjong."
+    },
+    "duration": 6,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "四川麻将可以 [[term:pung]]，可以 [[term:kong]]，但 [[term:no-chow]]。三张同门连续点数仍然是 [[term:chow]] 的结构，只是不能通过吃别家舍牌形成。",
+          "en": "Sichuan Mahjong allows [[term:pung]] and [[term:kong]], but has [[term:no-chow]]. Three consecutive tiles in one suit can still be a [[term:chow]] structure inside the hand; it just cannot be claimed from another player's discard."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "记忆法：碰杠看“同一张”，顺子看“同一门连续”。",
+          "en": "Memory hook: Pung and Kong use identical tiles; Chow uses consecutive ranks in one suit."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "不能吃的顺子",
+          "en": "A Chow structure you cannot claim"
+        },
+        "body": {
+          "zh": "3 条、4 条、5 条是顺子结构，但四川规则里不能吃别人打出的 4 条来组成它。",
+          "en": "3, 4, and 5 Bamboo form a Chow structure, but Sichuan rules do not allow claiming another player's 4 Bamboo to make it."
+        },
+        "tiles": [
+          "3t",
+          "4t",
+          "5t"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L0-03-q1",
+        "prompt": {
+          "zh": "5 筒 5 筒 5 筒是什么？",
+          "en": "What are 5 Dots, 5 Dots, 5 Dots?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "刻子",
+              "en": "Pung"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "顺子",
+              "en": "Chow"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "对将",
+              "en": "Pair"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "三张同门同点数是刻子，也就是 Pung。",
+          "en": "Three identical suited tiles form a Pung."
+        },
+        "terms": [
+          "pung",
+          "meld"
+        ]
+      },
+      {
+        "id": "L0-03-q2",
+        "prompt": {
+          "zh": "四川麻将里，别人打出 4 条时，你能吃成 3-4-5 条吗？",
+          "en": "In Sichuan Mahjong, can you claim a discarded 4 Bamboo to make 3-4-5 Bamboo?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "能",
+              "en": "Yes"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "不能",
+              "en": "No"
+            },
+            "correct": true
+          }
+        ],
+        "explanation": {
+          "zh": "顺子结构可以在手里形成，但四川麻将不可吃。",
+          "en": "The Chow structure can exist in the hand, but claiming Chow is not allowed in Sichuan Mahjong."
+        },
+        "terms": [
+          "chow",
+          "no-chow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L0-04",
+    "level": "L0",
+    "index": 4,
+    "title": {
+      "zh": "面子与将",
+      "en": "Melds and the pair"
+    },
+    "goal": {
+      "zh": "认识面子与将，能判断一小组牌是否成结构。",
+      "en": "Recognize melds and the pair, and judge whether a small group forms a structure."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:meld]] 是胡牌骨架里的三张结构，常见是刻子和顺子；[[term:pair]] 是两张同门同点数。先会看小结构，后面才看整手牌。",
+          "en": "A [[term:meld]] is a three-tile structure in the winning skeleton, commonly Pung or Chow; a [[term:pair]] is two identical suited tiles. Learn small structures before reading a whole hand."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "面子判断先问三件事：是不是同门？是不是同点？是不是连续？",
+          "en": "To judge a structure, ask: same suit, same rank, or consecutive ranks?"
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "两组结构",
+          "en": "Two structures"
+        },
+        "body": {
+          "zh": "7 万 7 万是一对将；3 筒 4 筒 5 筒是顺子结构。",
+          "en": "7 Characters and 7 Characters form a pair; 3, 4, 5 Dots form a Chow structure."
+        },
+        "tiles": [
+          "7w",
+          "7w",
+          "3p",
+          "4p",
+          "5p"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L0-04-q1",
+        "prompt": {
+          "zh": "7 万 7 万是什么？",
+          "en": "What are 7 Characters and 7 Characters?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "对将",
+              "en": "Pair"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "刻子",
+              "en": "Pung"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "非面子",
+              "en": "Not a meld"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "两张同门同点数是一对将。",
+          "en": "Two identical suited tiles form a pair."
+        },
+        "terms": [
+          "pair"
+        ]
+      },
+      {
+        "id": "L0-04-q2",
+        "prompt": {
+          "zh": "3 筒 4 条 5 筒为什么不是顺子？",
+          "en": "Why are 3 Dots, 4 Bamboo, and 5 Dots not a Chow?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "因为跨门了",
+              "en": "Because they cross suits"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "因为点数太小",
+              "en": "Because the ranks are too low"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "顺子必须同一门连续，跨门不成结构。",
+          "en": "A Chow must be consecutive within one suit; mixed suits do not form a structure."
+        },
+        "terms": [
+          "chow",
+          "meld"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L0-05",
+    "level": "L0",
+    "index": 5,
+    "title": {
+      "zh": "胡牌长什么样",
+      "en": "What a winning hand looks like"
+    },
+    "goal": {
+      "zh": "建立标准胡牌结构的直觉，不进入听牌求解。",
+      "en": "Build intuition for the standard winning shape without solving waits yet."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "标准 [[term:win]] 的骨架是 4 个 [[term:meld]] 加 1 个 [[term:pair]]，并且要满足定缺要求。四川麻将虽然不可吃，但手里仍可能自然形成顺子结构。",
+          "en": "A standard [[term:win]] skeleton is four [[term:meld]] structures plus one [[term:pair]], while also satisfying the void-suit requirement. Sichuan Mahjong forbids claiming Chow, but Chow structures can still form naturally in the hand."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "本课只看结构，不讲番数、赔付或平台细则。",
+          "en": "This lesson covers structure only, not fan values, payments, or platform-specific scoring."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "一个标准骨架",
+          "en": "A standard skeleton"
+        },
+        "body": {
+          "zh": "这组示例可以读成 3-4-5 条、5 筒刻子、7 万对子等小结构；真正整手胡牌判断会在后续阶段扩展。",
+          "en": "This example contains small structures such as 3-4-5 Bamboo, a 5 Dots Pung, and a 7 Characters pair; full-hand win checking expands in a later phase."
+        },
+        "tiles": [
+          "3t",
+          "4t",
+          "5t",
+          "5p",
+          "5p",
+          "5p",
+          "7w",
+          "7w"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L0-05-q1",
+        "prompt": {
+          "zh": "标准胡牌骨架需要哪一项？",
+          "en": "Which item belongs in a standard winning skeleton?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "4 个面子 + 1 对将",
+              "en": "Four melds plus one pair"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "5 个对子",
+              "en": "Five pairs"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "三门都保留",
+              "en": "Keeping all three suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "标准结构是 4 面子 + 1 对将，同时还要满足缺门。",
+          "en": "The standard shape is four melds plus one pair, while also clearing the void suit."
+        },
+        "terms": [
+          "win",
+          "meld",
+          "pair",
+          "void-suit"
+        ]
+      },
+      {
+        "id": "L0-05-q2",
+        "prompt": {
+          "zh": "定缺万时，手里还留着 7 万，可以算合格胡牌吗？",
+          "en": "If Characters are void but 7 Characters is still in the hand, can it qualify as a win?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "可以，只要面子够",
+              "en": "Yes, as long as the melds are complete"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "不可以，还没有打缺",
+              "en": "No, the void suit has not been cleared"
+            },
+            "correct": true
+          }
+        ],
+        "explanation": {
+          "zh": "标准胡牌结构之外，还必须满足定缺门已经打缺。",
+          "en": "Beyond the winning structure, the declared void suit must be cleared."
+        },
+        "terms": [
+          "void-suit",
+          "one-suit-missing",
+          "win"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L0-06",
+    "level": "L0",
+    "index": 6,
+    "title": {
+      "zh": "一局流程与血战到底",
+      "en": "Flow of a hand and fight to the end"
+    },
+    "goal": {
+      "zh": "理解一局从发牌、定缺、摸打到血战到底的基本流程。",
+      "en": "Understand the basic flow from dealing and voiding to draw-discard play and fight-to-the-end continuation."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "一局开始先发牌并 [[term:void-suit]]，随后轮流摸牌、[[term:discard]]、碰杠或胡。[[term:fight-to-the-end]] 的关键是：一家胡后未胡者继续，直到有 3 家胡牌或流局。",
+          "en": "A hand begins with dealing and [[term:void-suit]], then players draw, [[term:discard]], Pung, Kong, or win in turn. The key of [[term:fight-to-the-end]] is that after one player wins, the others continue until three players have won or the hand draws."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "先抓主线：定缺决定方向，摸打推进手牌，血战让未胡者继续决策。",
+          "en": "Track the main line first: voiding sets your direction, draw-discard play develops the hand, and fight-to-the-end keeps decisions going for players who have not won."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "流程中的小手牌",
+          "en": "A small flow example"
+        },
+        "body": {
+          "zh": "定缺万时，摸到 7 万通常优先考虑打出，因为它属于定缺门。",
+          "en": "If Characters are void, drawing 7 Characters usually points toward discarding it because it belongs to the declared void suit."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "5t",
+          "6t",
+          "7w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L0-06-q1",
+        "prompt": {
+          "zh": "血战到底里，一家胡牌后牌局怎样？",
+          "en": "In fight-to-the-end play, what happens after one player wins?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "立刻结束",
+              "en": "The hand ends immediately"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "未胡者继续",
+              "en": "Players who have not won continue"
+            },
+            "correct": true
+          }
+        ],
+        "explanation": {
+          "zh": "血战到底不是一家胡就结束，未胡者继续。",
+          "en": "Fight-to-the-end does not stop at the first win; players who have not won continue."
+        },
+        "terms": [
+          "fight-to-the-end",
+          "win"
+        ]
+      },
+      {
+        "id": "L0-06-q2",
+        "prompt": {
+          "zh": "定缺万时摸到万，最基本的方向是什么？",
+          "en": "If Characters are void and you draw a Character tile, what is the basic direction?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "尽快打缺这门",
+              "en": "Work to clear that suit"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "保留三门",
+              "en": "Keep all three suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "定缺要求最终打缺该门，优先处理定缺门牌。",
+          "en": "Voiding requires that suit to be cleared, so tiles in that suit should be handled first."
+        },
+        "terms": [
+          "void-suit",
+          "one-suit-missing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-01",
+    "level": "L1",
+    "index": 1,
+    "title": {
+      "zh": "听牌是什么",
+      "en": "What ready hand means"
+    },
+    "goal": {
+      "zh": "理解听牌是“再来某些牌就能胡”的状态。",
+      "en": "Understand ready hand as the state where certain incoming tiles complete the hand."
+    },
+    "duration": 6,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:ready-hand]] 不是已经胡，而是“差最后一步”。当你已经打缺定缺门，并且再来某些牌可组成 [[term:win]] 结构，就可以说在听牌。",
+          "en": "[[term:ready-hand]] does not mean you have already won; it means you are one step away. After clearing the declared void suit, if certain incoming tiles can complete a [[term:win]] structure, the hand is ready."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "本期只讲听牌概念，具体听哪些张的求解器留到 Phase 2。",
+          "en": "Phase 1 teaches the concept of ready hand; the exact waits solver belongs to Phase 2."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "差一张的感觉",
+          "en": "One tile away"
+        },
+        "body": {
+          "zh": "这组牌展示“接近完成”的感觉：已有顺子结构和对子，但不在本期计算具体进张。",
+          "en": "This set shows the feeling of being close: it has a Chow structure and a pair, but Phase 1 does not calculate exact waits."
+        },
+        "tiles": [
+          "3t",
+          "4t",
+          "5t",
+          "7p",
+          "7p",
+          "8p"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-01-q1",
+        "prompt": {
+          "zh": "听牌最准确的意思是？",
+          "en": "What does ready hand mean most accurately?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "已经胡牌",
+              "en": "Already won"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "再来某些牌即可胡",
+              "en": "Certain incoming tiles would complete the hand"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "必须杠",
+              "en": "Must declare Kong"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "听牌是差最后完成牌，不等于已经胡。",
+          "en": "Ready hand means one step from completion, not already won."
+        },
+        "terms": [
+          "ready-hand",
+          "win"
+        ]
+      },
+      {
+        "id": "L1-01-q2",
+        "prompt": {
+          "zh": "想进入听牌判断前，四川麻将还要先注意哪件事？",
+          "en": "Before judging ready hand in Sichuan Mahjong, what must you still watch first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "是否已经打缺定缺门",
+              "en": "Whether the declared void suit has been cleared"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "是否保留三门",
+              "en": "Whether all three suits are kept"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "是否一定要杠",
+              "en": "Whether a Kong is required"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "四川麻将的听牌和胡牌都不能忽略定缺，定缺门未打缺会影响后续判断。",
+          "en": "Ready-hand and winning judgment in Sichuan Mahjong cannot ignore the declared void suit."
+        },
+        "terms": [
+          "ready-hand",
+          "void-suit",
+          "one-suit-missing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-02",
+    "level": "L1",
+    "index": 2,
+    "title": {
+      "zh": "基本听法",
+      "en": "Basic waits"
+    },
+    "goal": {
+      "zh": "用直觉认识边张、嵌张和对子相关的基本听法，不做完整求解。",
+      "en": "Build intuition for simple wait shapes without implementing full wait solving."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "基本听法可以先从小结构看：3 条 4 条可能等 2 条或 5 条成顺子；5 筒 5 筒可能等 5 筒成 [[term:pung]]。这些只是形状直觉，不替代完整 [[term:ready-hand]] 判断。",
+          "en": "Basic waits can be seen from small shapes: 3 and 4 Bamboo may wait for 2 or 5 Bamboo to make a Chow; 5 and 5 Dots may wait for 5 Dots to make a [[term:pung]]. These are shape intuitions, not a full [[term:ready-hand]] solver."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "先学会看“还差什么让小结构成立”，再学整手牌听牌。",
+          "en": "First learn what a small shape is missing; full-hand ready evaluation comes later."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "小结构还差什么",
+          "en": "What the small shape needs"
+        },
+        "body": {
+          "zh": "3 条 4 条接 2 条或 5 条都能形成同门连续三张。",
+          "en": "3 and 4 Bamboo can connect with 2 or 5 Bamboo to form three consecutive tiles in one suit."
+        },
+        "tiles": [
+          "3t",
+          "4t",
+          "2t",
+          "5t"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-02-q1",
+        "prompt": {
+          "zh": "3 条 4 条接哪张可以成顺子？",
+          "en": "Which tile can complete 3 and 4 Bamboo as a Chow?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "5 条",
+              "en": "5 Bamboo"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "5 万",
+              "en": "5 Characters"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "9 筒",
+              "en": "9 Dots"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "顺子必须同门连续，3-4-5 条成立。",
+          "en": "A Chow must be consecutive in the same suit, so 3-4-5 Bamboo works."
+        },
+        "terms": [
+          "chow",
+          "bamboo"
+        ]
+      },
+      {
+        "id": "L1-02-q2",
+        "prompt": {
+          "zh": "5 筒 5 筒再来 5 筒会形成什么？",
+          "en": "What does 5 Dots, 5 Dots plus another 5 Dots form?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "刻子",
+              "en": "Pung"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "顺子",
+              "en": "Chow"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "三张同门同点数是刻子。",
+          "en": "Three identical suited tiles form a Pung."
+        },
+        "terms": [
+          "pung",
+          "dots"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-03",
+    "level": "L1",
+    "index": 3,
+    "title": {
+      "zh": "自摸 vs 点炮",
+      "en": "Self-draw vs discard win"
+    },
+    "goal": {
+      "zh": "区分自摸和点炮/放铳的来源。",
+      "en": "Distinguish winning by self-draw from winning by another player's discard."
+    },
+    "duration": 6,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:self-draw]] 是自己摸到完成牌；[[term:discard-win]] 是别人打出的牌让你完成。两者在平台结算上常有差异，但具体赔付属于后续平台细则，本期只记来源。",
+          "en": "[[term:self-draw]] means you draw the completing tile yourself; [[term:discard-win]] means another player's discard completes your hand. Platforms may settle them differently, but Phase 1 only teaches the source of the winning tile."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "不要把“来源”误记成“本期要算分”；本期不写自摸或点炮的赔付数字。",
+          "en": "Do not confuse source of win with scoring; Phase 1 does not teach payment numbers for self-draw or discard win."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "两种来源",
+          "en": "Two sources"
+        },
+        "body": {
+          "zh": "如果最后一张是自己摸来的，就是自摸；如果是别人打出给你胡，就是点炮/放铳。",
+          "en": "If the completing tile is drawn by you, it is self-draw; if it is discarded by someone else and you win on it, it is win by discard."
+        },
+        "tiles": [
+          "5p",
+          "5p",
+          "5p",
+          "3t",
+          "4t",
+          "5t"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-03-q1",
+        "prompt": {
+          "zh": "自己摸到最后一张完成胡牌，叫？",
+          "en": "You draw the final completing tile yourself. What is it called?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "自摸",
+              "en": "Win from the wall / self-draw"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "点炮",
+              "en": "Win by discard"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "自己摸到完成牌是自摸。",
+          "en": "Drawing the completing tile yourself is self-draw."
+        },
+        "terms": [
+          "self-draw"
+        ]
+      },
+      {
+        "id": "L1-03-q2",
+        "prompt": {
+          "zh": "别人打出的牌让你胡，叫？",
+          "en": "Another player's discard completes your hand. What is it called?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "点炮 / 放铳",
+              "en": "Win by discard"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "定缺",
+              "en": "Void a suit"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "胡别人打出的牌是点炮/放铳语境。",
+          "en": "Winning on another player's discard is win by discard."
+        },
+        "terms": [
+          "discard-win"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-04",
+    "level": "L1",
+    "index": 4,
+    "title": {
+      "zh": "花猪与查叫",
+      "en": "Flowery pig and tenpai check"
+    },
+    "goal": {
+      "zh": "知道流局时花猪与查叫检查什么，不写罚分。",
+      "en": "Know what flowery pig and tenpai check inspect at a draw, without payment values."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "流局时会检查两件事：还有三门、没有完成定缺的叫 [[term:flowery-pig]]；没有进入 [[term:ready-hand]] 的情况会进入 [[term:tenpai-check]] 语境。赔付数字和细节属于平台规则，本期不写。",
+          "en": "At a draw, two checks matter: keeping all three suits and failing to clear the void suit is [[term:flowery-pig]]; not being in [[term:ready-hand]] belongs to the [[term:tenpai-check]] context. Payment numbers and details are platform rules and are not written in Phase 1."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "花猪看是否打缺；查叫看是否听牌。先分清检查对象。",
+          "en": "Flowery pig checks whether the void suit was cleared; tenpai check concerns whether the hand is ready. Keep the targets separate."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "仍有三门",
+          "en": "Still holding three suits"
+        },
+        "body": {
+          "zh": "定缺万却还保留筒、条、万三门，流局时会触发花猪风险。",
+          "en": "If Characters are void but the hand still keeps Dots, Bamboo, and Characters, it risks the flowery-pig check at a draw."
+        },
+        "tiles": [
+          "2p",
+          "5t",
+          "7w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-04-q1",
+        "prompt": {
+          "zh": "花猪主要检查什么？",
+          "en": "What does flowery pig mainly check?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "是否还有三门、未打缺",
+              "en": "Whether all three suits remain and the void suit was not cleared"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "是否有清一色",
+              "en": "Whether there is a pure suit hand"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "花猪和未定缺成功有关。",
+          "en": "Flowery pig is tied to failing to clear the declared void suit."
+        },
+        "terms": [
+          "flowery-pig",
+          "void-suit"
+        ]
+      },
+      {
+        "id": "L1-04-q2",
+        "prompt": {
+          "zh": "查叫相关的是哪件事？",
+          "en": "What is tenpai check related to?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "是否听牌",
+              "en": "Whether the hand is ready"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "是否有字牌",
+              "en": "Whether honor tiles are present"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "查叫关注流局时是否有叫，也就是是否听牌。",
+          "en": "Tenpai check concerns whether the hand is ready at a draw."
+        },
+        "terms": [
+          "tenpai-check",
+          "ready-hand"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-05",
+    "level": "L1",
+    "index": 5,
+    "title": {
+      "zh": "番型入门",
+      "en": "Pattern basics"
+    },
+    "goal": {
+      "zh": "只认识清一色、对对胡、七对的定义，不写番数。",
+      "en": "Recognize Pure suit hand, All-triplets, and Seven pairs by definition only."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "番型先只学定义：[[term:pure-suit]] 是一门到底；[[term:all-triplets]] 是全靠刻子/杠加一对将；[[term:seven-pairs]] 是七个对子。本期不写任何番数。",
+          "en": "Learn pattern definitions only: [[term:pure-suit]] uses one suit throughout; [[term:all-triplets]] uses triplets/quads plus one pair; [[term:seven-pairs]] uses seven pairs. Phase 1 writes no fan values."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "本课先认识番型；教学计分规则见后续课程。",
+          "en": "This lesson introduces patterns; teaching scores are covered in later lessons."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "清一色直觉",
+          "en": "Pure suit intuition"
+        },
+        "body": {
+          "zh": "这组牌全是条，所以有清一色的一门到底直觉。",
+          "en": "This set is all Bamboo, so it shows the one-suit intuition of Pure suit hand."
+        },
+        "tiles": [
+          "2t",
+          "3t",
+          "4t",
+          "6t",
+          "6t",
+          "6t",
+          "9t",
+          "9t"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-05-q1",
+        "prompt": {
+          "zh": "清一色的定义是什么？",
+          "en": "What defines a Pure suit hand?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "只用一门牌",
+              "en": "Using one suit only"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "三门都要有",
+              "en": "Keeping all three suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "清一色是一门到底。",
+          "en": "Pure suit hand uses one suit throughout."
+        },
+        "terms": [
+          "pure-suit"
+        ]
+      },
+      {
+        "id": "L1-05-q2",
+        "prompt": {
+          "zh": "对对胡的直觉是什么？",
+          "en": "What is the intuition of All-triplets?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "全是刻子/杠加一对将",
+              "en": "Triplets/quads plus one pair"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "全是顺子",
+              "en": "All Chows"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "对对胡是全刻子方向，不讲番数。",
+          "en": "All-triplets is a triplet-focused shape; no fan value is taught here."
+        },
+        "terms": [
+          "all-triplets",
+          "pung",
+          "kong",
+          "pair"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-06",
+    "level": "L1",
+    "index": 6,
+    "title": {
+      "zh": "选门与定缺策略",
+      "en": "Choosing the void suit"
+    },
+    "goal": {
+      "zh": "学会用数量和结构粗略选择定缺门。",
+      "en": "Learn to choose a void suit roughly by count and structure."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "选 [[term:void-suit]] 时先看两件事：哪门最少，哪门结构最弱。如果某门数量少、没有好 [[term:meld]] 形状，通常更适合定缺；但最终选择仍要看整手牌。",
+          "en": "When choosing a [[term:void-suit]], first look at two things: which suit is shortest and which suit has the weakest structure. A suit with few tiles and weak [[term:meld]] shapes is often easier to void, but the whole hand still matters."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "初学默认先数张，再看结构；不要为了保留三门而拖慢打缺。",
+          "en": "As a beginner, count first and then inspect structure; do not slow down clearing a suit just to keep all three suits."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "少而散的万",
+          "en": "Short and scattered Characters"
+        },
+        "body": {
+          "zh": "这手牌里万只有 1 万、9 万，数量少且不连，定缺万更直观。",
+          "en": "This hand has only 1 and 9 Characters, few and disconnected, so voiding Characters is the intuitive choice."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "5t",
+          "6t",
+          "7t",
+          "1w",
+          "9w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-06-q1",
+        "prompt": {
+          "zh": "初学选定缺时，哪门通常更适合先考虑？",
+          "en": "For a beginner choosing a void suit, which suit is usually worth considering first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "数量少、结构弱的一门",
+              "en": "The suit with fewer tiles and weaker structure"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "数量最多的一门",
+              "en": "The suit with the most tiles"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "少而散的一门更容易打缺。",
+          "en": "A short, scattered suit is usually easier to clear."
+        },
+        "terms": [
+          "void-suit",
+          "meld"
+        ]
+      },
+      {
+        "id": "L1-06-q2",
+        "prompt": {
+          "zh": "如果某门已经有 3-4-5 的连续形状，说明什么？",
+          "en": "If a suit already has a 3-4-5 shape, what does that suggest?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "这门有结构价值",
+              "en": "That suit has structural value"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "这门一定要定缺",
+              "en": "That suit must be voided"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "同门连续能形成顺子结构，通常不算最弱。",
+          "en": "Consecutive same-suit tiles can form a Chow structure, so the suit is not usually the weakest."
+        },
+        "terms": [
+          "chow",
+          "meld"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-07",
+    "level": "L1",
+    "index": 7,
+    "title": {
+      "zh": "安全牌入门",
+      "en": "Safe tile basics"
+    },
+    "goal": {
+      "zh": "建立安全牌的基础概念：先打缺，再减少放铳风险。",
+      "en": "Build the basic idea of safe tiles: clear the void suit first, then reduce discard-win risk."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:safe-tile]] 是相对不容易让别人 [[term:discard-win]] 的舍牌。L1 只讲入门：先完成打缺，再观察别人打过什么、碰过什么；不要把“安全”理解成绝对安全。",
+          "en": "A [[term:safe-tile]] is a discard relatively less likely to let someone [[term:discard-win]]. L1 only covers the entry point: clear your void suit first, then observe others' discards and Pungs; do not treat \"safe\" as absolute."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "安全牌是概率和信息判断，不是保证；本期不做危险度模型。",
+          "en": "Safe-tile judgment is probabilistic and information-based, not guaranteed; Phase 1 does not build a danger model."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "先处理定缺门",
+          "en": "Clear the void suit first"
+        },
+        "body": {
+          "zh": "定缺万时，手里还有 8 万；在没有更强理由前，先处理定缺门比贪留三门更稳。",
+          "en": "If Characters are void and 8 Characters remains, clearing the void suit is steadier than greedily keeping all three suits unless there is a stronger reason."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4t",
+          "5t",
+          "8w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-07-q1",
+        "prompt": {
+          "zh": "“安全牌”意味着什么？",
+          "en": "What does \"safe tile\" mean?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "相对不容易让别人胡",
+              "en": "Relatively less likely to let someone win"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "一定不会点炮",
+              "en": "Guaranteed never to deal in"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "安全是相对判断，不是绝对保证。",
+          "en": "Safety is relative judgment, not a guarantee."
+        },
+        "terms": [
+          "safe-tile",
+          "discard-win"
+        ]
+      },
+      {
+        "id": "L1-07-q2",
+        "prompt": {
+          "zh": "定缺还没完成时，最先检查什么？",
+          "en": "If the void suit has not been cleared, what should you check first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "是否还有定缺门牌",
+              "en": "Whether the declared void suit still remains"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "是否要保留三门",
+              "en": "Whether to keep all three suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "初学先完成缺门，再谈更细的安全。",
+          "en": "Beginners should clear the void suit before finer safety judgments."
+        },
+        "terms": [
+          "void-suit",
+          "one-suit-missing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L1-08",
+    "level": "L1",
+    "index": 8,
+    "title": {
+      "zh": "L1 综合",
+      "en": "Core concepts review"
+    },
+    "goal": {
+      "zh": "综合复习 L1 核心概念，达到 80% 后解锁下一层。",
+      "en": "Review L1 core concepts; scoring at least 80% unlocks the next level."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "L1 把 L0 的认牌和定缺，连接到 [[term:ready-hand]]、自摸/点炮、[[term:flowery-pig]]、[[term:tenpai-check]] 与番型定义。你现在应该能解释概念，但还不需要会完整听牌或算分。",
+          "en": "L1 connects L0 tile recognition and voiding to [[term:ready-hand]], self-draw/discard win, [[term:flowery-pig]], [[term:tenpai-check]], and pattern definitions. You should now be able to explain the ideas, without full wait solving or scoring."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "通关测验可重考，系统保留最高分；错题术语会进入今日复习。",
+          "en": "The gate quiz can be retaken, the best score is kept, and terms from missed questions enter today's review."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "综合牌例",
+          "en": "Review example"
+        },
+        "body": {
+          "zh": "定缺万后，这组牌没有万，且有 5 筒刻子与 3-4-5 条结构。",
+          "en": "After voiding Characters, this set has no Characters and includes a 5 Dots Pung plus a 3-4-5 Bamboo structure."
+        },
+        "tiles": [
+          "5p",
+          "5p",
+          "5p",
+          "3t",
+          "4t",
+          "5t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L1-08-q1",
+        "prompt": {
+          "zh": "流局时仍有三门、没打缺，最接近哪个概念？",
+          "en": "At a draw, still holding all three suits and failing to clear the void suit points to which concept?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "花猪",
+              "en": "Flowery pig"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "清一色",
+              "en": "Pure suit hand"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "自摸",
+              "en": "Self-draw"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "花猪关注未定缺成功，也就是仍保留三门。",
+          "en": "Flowery pig concerns failing to clear the declared void suit, often still holding all three suits."
+        },
+        "terms": [
+          "flowery-pig",
+          "void-suit"
+        ]
+      },
+      {
+        "id": "L1-08-q2",
+        "prompt": {
+          "zh": "只用一门牌的胡牌形态叫什么？",
+          "en": "What is the pattern that uses one suit only?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "清一色",
+              "en": "Pure suit hand"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "对对胡",
+              "en": "All-triplets"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "查叫",
+              "en": "Tenpai check"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "清一色定义是一门到底；本期不讲番数。",
+          "en": "Pure suit hand means one suit throughout; Phase 1 does not teach its fan value."
+        },
+        "terms": [
+          "pure-suit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-01",
+    "level": "L2",
+    "index": 1,
+    "title": {
+      "zh": "进张与有效牌",
+      "en": "Effective tiles"
+    },
+    "goal": {
+      "zh": "理解 [[term:effective-tiles]]：哪些摸入会让手牌变好。",
+      "en": "Understand [[term:effective-tiles]]: which incoming tiles improve a hand."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:effective-tiles]] 不是“喜欢的牌”，而是摸到后能让手牌更接近 [[term:ready-hand]] 或增加等待面的牌。先确认已经 [[term:one-suit-missing]]，再看每张候选摸入能不能组成顺子、刻子或对子。",
+          "en": "[[term:effective-tiles]] are not favorite tiles; they are tiles that move the hand closer to [[term:ready-hand]] or widen the waits. First confirm [[term:one-suit-missing]], then check whether each candidate completes a Chow structure, Pung, or Pair."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "初学时只数“打出一张后，下一步能让手牌变好的牌有几种”。不要在这里引入任何结算数值。",
+          "en": "At this stage, count how many incoming tile types improve the hand after one discard. Do not add any settlement values here."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "边张进张",
+          "en": "Edge wait improvement"
+        },
+        "body": {
+          "zh": "定缺万后，1筒2筒等待3筒成顺；3筒就是有效牌。",
+          "en": "With Characters voided, 1 Dots and 2 Dots wait on 3 Dots to complete a Chow structure; 3 Dots is an effective tile."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-01-q1",
+        "prompt": {
+          "zh": "定缺万，1筒2筒这组最直接的有效牌是什么？",
+          "en": "With Characters voided, what is the direct effective tile for 1 Dots and 2 Dots?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "3筒",
+              "en": "3 Dots"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "3条",
+              "en": "3 Bamboo"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "9万",
+              "en": "9 Characters"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "1筒2筒只能用3筒补成同门顺子。",
+          "en": "1 Dots and 2 Dots need 3 Dots to complete a same-suit Chow structure."
+        },
+        "terms": [
+          "effective-tiles",
+          "chow",
+          "one-suit-missing"
+        ]
+      },
+      {
+        "id": "L2-01-q2",
+        "prompt": {
+          "zh": "数有效牌前，定缺门还在手里时应先看什么？",
+          "en": "Before counting effective tiles, what should you check if the void suit is still in hand?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "先处理定缺门",
+              "en": "Clear the declared void suit first"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "先保留所有对子",
+              "en": "Keep every pair first"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "先看别人是否已经胡",
+              "en": "First check whether others have won"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "胡牌前必须打缺定缺门，未清缺时牌效判断要先服务于清缺。",
+          "en": "A winning hand must clear the declared void suit, so efficiency first serves voiding when the suit remains."
+        },
+        "terms": [
+          "void-suit",
+          "effective-tiles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-02",
+    "level": "L2",
+    "index": 2,
+    "title": {
+      "zh": "牌效率：摸打选择",
+      "en": "Tile efficiency for draw-discard"
+    },
+    "goal": {
+      "zh": "用 [[term:tile-efficiency]] 比较“打哪张之后听牌更宽”。",
+      "en": "Use [[term:tile-efficiency]] to compare which discard leaves wider waits."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:tile-efficiency]] 的基本做法是：列出可打牌，分别移除一张，再用 [[term:ready-hand]] 判断看留下哪些 [[term:effective-tiles]]。进张更多通常更好，但定缺门优先级更高。",
+          "en": "Basic [[term:tile-efficiency]] means listing discard candidates, removing each one, and checking [[term:ready-hand]] waits or [[term:effective-tiles]]. More waits are usually better, but clearing the declared void suit comes first."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "对比舍牌",
+          "en": "Compare discards"
+        },
+        "body": {
+          "zh": "这手牌若打9条，保留1筒2筒听3筒；若拆对子，可能减少等待面。",
+          "en": "If this hand discards 9 Bamboo, it keeps 1 Dots and 2 Dots waiting on 3 Dots; breaking the pair can narrow the waits."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "9p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t",
+          "9t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-02-q1",
+        "prompt": {
+          "zh": "比较两张舍牌后，最应该记录什么？",
+          "en": "When comparing two discards, what should you record first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "每张舍牌后能等哪些进张",
+              "en": "Which waits remain after each discard"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "谁坐在上家",
+              "en": "Who sits to your left"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "牌面颜色是否好看",
+              "en": "Whether the tile colors look nice"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "牌效比较要落到具体等待牌，而不是感觉。",
+          "en": "Efficiency comparison should be grounded in concrete waits, not impressions."
+        },
+        "terms": [
+          "tile-efficiency",
+          "effective-tiles",
+          "discard"
+        ]
+      },
+      {
+        "id": "L2-02-q2",
+        "prompt": {
+          "zh": "如果手里还有定缺门，牌效选择通常先服务于什么？",
+          "en": "If the declared void suit is still in hand, what does efficiency usually serve first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "清缺",
+              "en": "Clearing the void suit"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "保留所有孤张",
+              "en": "Keeping every isolated tile"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "拆掉所有顺子",
+              "en": "Breaking every Chow structure"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "未清缺不能胡，清缺是摸打方向的硬约束。",
+          "en": "You cannot win before clearing the void suit, so voiding is a hard constraint."
+        },
+        "terms": [
+          "void-suit",
+          "tile-efficiency"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-03",
+    "level": "L2",
+    "index": 3,
+    "title": {
+      "zh": "做牌方向 vs 求快胡",
+      "en": "Hand direction vs speed"
+    },
+    "goal": {
+      "zh": "区分 [[term:hand-direction]]：保留结构做牌，还是尽快进入听牌。",
+      "en": "Distinguish [[term:hand-direction]]: shape-building versus reaching ready hand quickly."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "求快胡时，优先保留现成顺子、刻子、对子和宽听；做牌时，会为了更清晰的 [[term:hand-direction]] 保留同门或对子结构。Phase 2 只训练方向选择，不比较任何结算数值。",
+          "en": "For speed, keep completed Chow structures, Pungs, Pairs, and wide waits. For shape-building, keep tiles that support a clear [[term:hand-direction]] such as one suit or pairs. Phase 2 trains direction choice only, without settlement values."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "快速成型",
+          "en": "Fast structure"
+        },
+        "body": {
+          "zh": "这手牌已经有多个现成结构，若目标是求快，应减少孤张，争取先听牌。",
+          "en": "This hand already has several made structures. If the goal is speed, reduce isolated tiles and aim for ready hand."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "4p",
+          "5p",
+          "6p",
+          "2t",
+          "2t",
+          "2t",
+          "7t",
+          "8t",
+          "9t",
+          "1p"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-03-q1",
+        "prompt": {
+          "zh": "求快胡时，通常优先保留哪类牌？",
+          "en": "When playing for speed, which tiles are usually kept first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "已成组或容易成组的牌",
+              "en": "Tiles already grouped or easy to group"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "所有定缺门牌",
+              "en": "Every declared void-suit tile"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "与任何牌都不相连的孤张",
+              "en": "Isolated tiles with no connection"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "求快的核心是减少无效张，尽快进入听牌。",
+          "en": "Speed means reducing dead tiles and reaching tenpai sooner."
+        },
+        "terms": [
+          "hand-direction",
+          "ready-hand"
+        ]
+      },
+      {
+        "id": "L2-03-q2",
+        "prompt": {
+          "zh": "做牌方向改变时，最需要重新检查什么？",
+          "en": "When hand direction changes, what should be checked again?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "哪些舍牌后进张更多",
+              "en": "Which discards leave more effective tiles"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "是否可以吃上家牌",
+              "en": "Whether you can claim Chow from the player before you"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "是否加入字牌",
+              "en": "Whether honor tiles are added"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "四川麻将不可吃，也没有字牌；方向改变后应重新比较进张。",
+          "en": "Sichuan Mahjong has no Chow claims and no honor tiles here; after direction changes, compare effective tiles again."
+        },
+        "terms": [
+          "tile-efficiency",
+          "no-chow",
+          "honor-tiles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-04",
+    "level": "L2",
+    "index": 4,
+    "title": {
+      "zh": "防守与拆牌",
+      "en": "Defense and breaking shapes"
+    },
+    "goal": {
+      "zh": "学会在对手压力变大时用 [[term:defense]] 思维拆牌。",
+      "en": "Learn to use [[term:defense]] when opponents become threatening."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:defense]] 不是放弃胡牌，而是在别人可能 [[term:ready-hand]] 时减少危险舍牌。最基础的线索是别人已经打过的牌、明显不要的门，以及自己不再需要的孤张。",
+          "en": "[[term:defense]] does not mean giving up the hand. It means reducing dangerous discards when others may be [[term:ready-hand]]. Basic clues include visible discards, suits they seem to reject, and isolated tiles you no longer need."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "防守只能基于可见信息推断，不能假装知道别人手牌。教练也只会展示 engine 和牌河能推出的事实。",
+          "en": "Defense is inference from visible information; you do not know hidden hands. The coach only shows facts derived from the engine and visible rivers."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "拆孤张",
+          "en": "Break isolated tiles"
+        },
+        "body": {
+          "zh": "当自己未听且对手压力变大时，先打不帮助成组的孤张，通常比拆现成顺子更稳。",
+          "en": "When you are not ready and opponents look threatening, discarding isolated tiles is usually steadier than breaking completed Chow structures."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "2t",
+          "2t",
+          "2t",
+          "8t",
+          "9t",
+          "1p",
+          "9p"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-04-q1",
+        "prompt": {
+          "zh": "基础防守优先依赖哪类信息？",
+          "en": "What information does basic defense rely on first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "可见舍牌与自己手牌",
+              "en": "Visible discards and your own hand"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "别人隐藏的手牌全貌",
+              "en": "The full hidden hands of others"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "结算表数值",
+              "en": "Settlement table values"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "Phase 2 防守只用可见信息推断，不做隐藏信息假设。",
+          "en": "Phase 2 defense uses visible information only and does not assume hidden hands."
+        },
+        "terms": [
+          "defense",
+          "discard-reading"
+        ]
+      },
+      {
+        "id": "L2-04-q2",
+        "prompt": {
+          "zh": "自己未听且有孤张时，通常先考虑什么？",
+          "en": "If you are not ready and have isolated tiles, what is usually considered first?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "打掉不帮助成组的孤张",
+              "en": "Discard isolated tiles that do not help shapes"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "拆掉全部现成顺子",
+              "en": "Break all completed Chow structures"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "保留定缺门等胡",
+              "en": "Keep the void suit and wait to win"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "孤张对成胡帮助小，未清缺仍必须先清缺。",
+          "en": "Isolated tiles help less; if the void suit remains, it still must be cleared."
+        },
+        "terms": [
+          "defense",
+          "discard",
+          "void-suit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-05",
+    "level": "L2",
+    "index": 5,
+    "title": {
+      "zh": "看舍牌读手",
+      "en": "Reading discard rivers"
+    },
+    "goal": {
+      "zh": "用 [[term:discard-reading]] 建立“别人可能不要什么、保留什么”的初步判断。",
+      "en": "Use [[term:discard-reading]] to infer what others may reject or keep."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:discard-reading]] 先看两件事：别人早早打出的门，可能是不需要或定缺方向；别人很久不打的门，可能有结构。这里只做概率性判断，不把推断当事实。",
+          "en": "[[term:discard-reading]] starts with two clues: suits discarded early may be unwanted or voided; suits not discarded for a long time may contain structure. These are probabilistic inferences, not facts."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "早打同门",
+          "en": "Early suit discards"
+        },
+        "body": {
+          "zh": "如果一家连续早打万，可能在清万或万门少；你不能据此确定其手牌，只能降低对万门结构的预期。",
+          "en": "If a player discards Characters early and repeatedly, they may be voiding Characters or have few of them. You cannot know the hand; you only lower the expectation of Character structures."
+        },
+        "tiles": [
+          "3w",
+          "7w",
+          "9w"
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-05-q1",
+        "prompt": {
+          "zh": "看舍牌读手时，下面哪句更准确？",
+          "en": "Which statement is more accurate when reading discards?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "这是基于可见信息的推断",
+              "en": "It is inference from visible information"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "可以直接知道别人所有手牌",
+              "en": "You directly know every hidden tile"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "可以忽略定缺",
+              "en": "You can ignore void suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "读手是推断，不是透视。",
+          "en": "Discard reading is inference, not hidden information."
+        },
+        "terms": [
+          "discard-reading",
+          "defense"
+        ]
+      },
+      {
+        "id": "L2-05-q2",
+        "prompt": {
+          "zh": "一家早早连续打出同一门，可能说明什么？",
+          "en": "What can repeated early discards in one suit suggest?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "那一门可能不被保留或正在清缺",
+              "en": "That suit may be unwanted or being voided"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "这家必定已经胡牌",
+              "en": "The player must already have won"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "这家一定在做七对",
+              "en": "The player must be making Seven pairs"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "这只是方向线索，不能直接推出确定牌型。",
+          "en": "This is a direction clue, not a certain hand-shape conclusion."
+        },
+        "terms": [
+          "discard-reading",
+          "void-suit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-06",
+    "level": "L2",
+    "index": 6,
+    "title": {
+      "zh": "杠的取舍",
+      "en": "Kong choices"
+    },
+    "goal": {
+      "zh": "理解 [[term:kong]] 的流程取舍：能杠不等于一定要杠。",
+      "en": "Understand [[term:kong]] flow choices: being able to Kong does not mean you always should."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "四川麻将可以 [[term:kong]]，也有与杠相关的俗称 [[term:kong-bonuses]]；但本期不实现任何结算细则。这里只看：杠是否破坏听牌、是否暴露信息、补牌后是否继续推进。",
+          "en": "Sichuan Mahjong allows [[term:kong]], and [[term:kong-bonuses]] is a common expression around Kongs; this phase implements no settlement details. Here, only check whether a Kong breaks readiness, exposes information, and how the replacement draw advances the hand."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "不要用“有收益”这种未定细则来做判断；Phase 2 的教练只看流程、听牌与牌效。",
+          "en": "Do not base decisions on unsettled value rules. The Phase 2 coach only checks flow, readiness, and efficiency."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "暗杠前检查",
+          "en": "Check before Kong"
+        },
+        "body": {
+          "zh": "四张相同牌可以杠；若当前已经听牌，先检查杠后手牌结构是否会改变等待面。",
+          "en": "Four identical tiles can form a Kong. If already ready, check whether declaring it changes the wait structure."
+        },
+        "tiles": [
+          "5p",
+          "5p",
+          "5p",
+          "5p",
+          "2t",
+          "3t",
+          "4t",
+          "6t",
+          "7t",
+          "8t",
+          "9t",
+          "9t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-06-q1",
+        "prompt": {
+          "zh": "Phase 2 里判断杠，主要看什么？",
+          "en": "In Phase 2, what is the main basis for a Kong decision?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "听牌、牌效和流程影响",
+              "en": "Readiness, efficiency, and flow impact"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "具体结算数值",
+              "en": "Specific settlement values"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "是否能吃顺子",
+              "en": "Whether a Chow can be claimed"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "§K 细则未定，本期不比较数值；四川麻将也不可吃。",
+          "en": "Section K details are unset, so this phase does not compare values; Chow claims are not allowed."
+        },
+        "terms": [
+          "kong",
+          "tile-efficiency",
+          "no-chow"
+        ]
+      },
+      {
+        "id": "L2-06-q2",
+        "prompt": {
+          "zh": "能杠时，为什么仍可能选择暂不杠？",
+          "en": "Why might you pass on a legal Kong?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "可能影响听牌或暴露结构",
+              "en": "It may affect readiness or expose structure"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "因为四川麻将不能杠",
+              "en": "Because Sichuan Mahjong cannot Kong"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "因为杠等同于吃",
+              "en": "Because Kong is the same as Chow"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "四川麻将可以杠，但取舍要看当下手牌目标。",
+          "en": "Sichuan Mahjong allows Kong, but the choice depends on the current hand goal."
+        },
+        "terms": [
+          "kong",
+          "ready-hand",
+          "hand-direction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-07",
+    "level": "L2",
+    "index": 7,
+    "title": {
+      "zh": "多听比较",
+      "en": "Comparing multiple waits"
+    },
+    "goal": {
+      "zh": "比较 [[term:multiple-waits]] 和单听，理解“宽听”为什么更稳。",
+      "en": "Compare [[term:multiple-waits]] with single waits and understand why wider waits are steadier."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:multiple-waits]] 指一手牌同时等待多种牌成胡。比较多听时，不只看张数，还要看是否包含定缺门、是否已被自己或别人打掉很多。",
+          "en": "[[term:multiple-waits]] means the hand can win on several tile types. When comparing waits, check not only count, but also whether a wait is the declared void suit or already heavily visible in discards."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "单听与多听",
+          "en": "Single vs multiple waits"
+        },
+        "body": {
+          "zh": "单等一张牌容易被牌墙或舍牌消耗；多听通常有更多完成机会。",
+          "en": "A single wait can be exhausted by the wall or discards; multiple waits usually give more chances to complete."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "4p",
+          "5p",
+          "6p",
+          "6t",
+          "7t",
+          "8t",
+          "2t",
+          "2t",
+          "3t",
+          "4t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-07-q1",
+        "prompt": {
+          "zh": "多听的直接优势是什么？",
+          "en": "What is the direct advantage of multiple waits?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "可成胡的牌种更多",
+              "en": "More tile types can complete the win"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "可以忽略定缺门",
+              "en": "You can ignore the declared void suit"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "可以吃别人舍牌",
+              "en": "You can claim Chow from discards"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "多听更宽，但仍必须满足缺门和四川不可吃规则。",
+          "en": "Multiple waits are wider, but the void-suit and no-Chow rules still apply."
+        },
+        "terms": [
+          "multiple-waits",
+          "void-suit",
+          "no-chow"
+        ]
+      },
+      {
+        "id": "L2-07-q2",
+        "prompt": {
+          "zh": "比较两个听牌面时，除了数量还要看什么？",
+          "en": "Besides count, what else matters when comparing waits?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "等待牌是否可用、是否已经大量可见",
+              "en": "Whether the waits are usable and already heavily visible"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "牌面是否都是红色",
+              "en": "Whether all tiles are red"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "是否含字牌",
+              "en": "Whether honor tiles are included"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "四川麻将本课程核心牌只有三门；可见牌会影响实际完成机会。",
+          "en": "This course uses only three suits; visible tiles affect real completion chances."
+        },
+        "terms": [
+          "multiple-waits",
+          "honor-tiles",
+          "discard-reading"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L2-08",
+    "level": "L2",
+    "index": 8,
+    "title": {
+      "zh": "L2 综合：从清缺到听牌",
+      "en": "L2 synthesis: from voiding to tenpai"
+    },
+    "goal": {
+      "zh": "把 [[term:void-suit]]、[[term:tile-efficiency]]、[[term:defense]]、[[term:ready-hand]] 串成一条决策链。",
+      "en": "Connect [[term:void-suit]], [[term:tile-efficiency]], [[term:defense]], and [[term:ready-hand]] into one decision chain."
+    },
+    "duration": 10,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "一手牌的基本顺序是：先看定缺门是否清掉；再看舍哪张保留更多进张；若别人压力变大，加入防守；最后用听牌判断检查哪些牌能胡。这个链条也是 Phase 2 牌桌教练的引导顺序。",
+          "en": "A hand's basic order is: first check whether the declared void suit is cleared; then compare which discard preserves more effective tiles; if opponents become threatening, add defense; finally use ready-hand checks to see which tiles win. This is also the Phase 2 table coach sequence."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "决策链",
+          "en": "Decision chain"
+        },
+        "body": {
+          "zh": "这手牌已缺万，下一步可比较打9条或拆对子后的进张，再判断是否听牌。",
+          "en": "This hand has voided Characters. Next compare waits after discarding 9 Bamboo or breaking a pair, then check readiness."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "9p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t",
+          "9t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L2-08-q1",
+        "prompt": {
+          "zh": "一手牌最先要检查的硬约束是什么？",
+          "en": "What hard constraint should be checked first in a hand?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "定缺门是否已经清掉",
+              "en": "Whether the declared void suit is cleared"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "是否能吃上家牌",
+              "en": "Whether you can Chow from the previous player"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "是否需要字牌",
+              "en": "Whether honor tiles are needed"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "缺门是胡牌前置；四川麻将不可吃，且本课程核心牌无字牌。",
+          "en": "Voiding is required before winning; Chow claims are not allowed, and this course uses no honor tiles."
+        },
+        "terms": [
+          "void-suit",
+          "no-chow",
+          "honor-tiles"
+        ]
+      },
+      {
+        "id": "L2-08-q2",
+        "prompt": {
+          "zh": "清缺后，牌效练习最常用的比较方式是什么？",
+          "en": "After clearing the void suit, what is the common efficiency comparison?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "分别打出候选牌，比较剩余进张",
+              "en": "Discard each candidate and compare remaining waits"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "直接保留所有孤张",
+              "en": "Keep all isolated tiles"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只看别人座位方向",
+              "en": "Only look at seating direction"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "牌效要落到可验证的等待牌与进张数量。",
+          "en": "Tile efficiency should be checked through concrete waits and effective tile counts."
+        },
+        "terms": [
+          "tile-efficiency",
+          "effective-tiles",
+          "discard"
+        ]
+      },
+      {
+        "id": "L2-08-q3",
+        "prompt": {
+          "zh": "对手压力变大时，牌效链里会加入哪一层判断？",
+          "en": "When opponent pressure rises, what layer is added to the efficiency chain?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "防守与舍牌风险",
+              "en": "Defense and discard risk"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "牌面装饰偏好",
+              "en": "Tile decoration preference"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "发音练习",
+              "en": "Pronunciation practice"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "Phase 2 只做本地牌桌与教练；压力变大时加入防守推断。",
+          "en": "Phase 2 uses a local table and coach only; when pressure rises, add defensive inference."
+        },
+        "terms": [
+          "defense",
+          "discard-reading"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-01",
+    "level": "L3",
+    "index": 1,
+    "title": {
+      "zh": "番型体系",
+      "en": "Scoring pattern system"
+    },
+    "goal": {
+      "zh": "建立 [[term:fan]]、最大番型和 [[term:teaching-points]] 的基础框架。",
+      "en": "Build the basic frame for [[term:fan]], highest pattern, and [[term:teaching-points]]."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "§K 的核心是：先判断胡牌结构，再找最大 [[term:fan]] 型，只按最大番型计，不把平胡、清一色、对对胡等基础番型重复相加。[[term:teaching-points]] 只用于学习和复盘。",
+          "en": "K starts by checking the winning shape, then choosing the highest [[term:fan]] pattern. Base patterns such as Basic hand, Pure suit, and All-triplets are not stacked together. [[term:teaching-points]] are only for learning and review."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "先问“最大番型是什么”，再问“有没有加番项”。顺序错了，分就容易算重。",
+          "en": "Ask \"what is the highest pattern\" before asking \"are there add-fan items.\" Reversing the order easily double-counts."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "最大番型",
+          "en": "Highest pattern"
+        },
+        "body": {
+          "zh": "这手全是筒，并且全靠刻子与一对将，是 [[term:pure-all-triplets]]，按 4 番，不再另加清一色和对对胡。",
+          "en": "This hand is one suit and all triplets plus a pair, so it is [[term:pure-all-triplets]] at 4 fan; Pure suit and All-triplets are not added again."
+        },
+        "tiles": [
+          "2p",
+          "2p",
+          "2p",
+          "3p",
+          "3p",
+          "3p",
+          "4p",
+          "4p",
+          "4p",
+          "6p",
+          "6p",
+          "6p",
+          "8p",
+          "8p"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-01-q1",
+        "prompt": {
+          "zh": "清一色的对对胡按 §K 归为哪一类？",
+          "en": "Under K, which pattern is a Pure suit All-triplets hand?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "清对 4 番",
+              "en": "Pure all-triplets, 4 fan"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "清一色 3 番再加对对胡 2 番",
+              "en": "Pure suit 3 fan plus All-triplets 2 fan"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "平胡 1 番",
+              "en": "Basic hand, 1 fan"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "§K 只按最大番型计，清对就是 4 番。",
+          "en": "K uses only the highest pattern; Pure all-triplets is 4 fan."
+        },
+        "terms": [
+          "fan",
+          "pure-all-triplets",
+          "all-triplets",
+          "pure-suit"
+        ]
+      },
+      {
+        "id": "L3-01-q2",
+        "prompt": {
+          "zh": "本应用里的积分语境是什么？",
+          "en": "What do points mean in this app?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "教学积分，用于练习和复盘",
+              "en": "Teaching points for practice and review"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "线下战绩记录",
+              "en": "An offline match record"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "线上匹配等级",
+              "en": "An online matching rank"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "进度里的 tablePoints 是可重置的教学积分。",
+          "en": "tablePoints are resettable teaching points."
+        },
+        "terms": [
+          "teaching-points",
+          "score-settlement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-02",
+    "level": "L3",
+    "index": 2,
+    "title": {
+      "zh": "各番计算",
+      "en": "Fan to points"
+    },
+    "goal": {
+      "zh": "掌握 [[term:base-score]]、倍率和自摸加底。",
+      "en": "Learn [[term:base-score]], multipliers, and self-draw base add-on."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "§K 锁定 [[term:base-score]] 为 2 分；n 番 = 2^(n-1) 倍，所以 1 番 2 分、2 番 4 分、3 番 8 分、4 番 16 分、5 番 32 分、6 番 64 分。[[term:self-draw-bonus]] 是每笔自摸胡牌额外 +2 分，不加番。",
+          "en": "K fixes [[term:base-score]] at 2 points. n fan uses a 2^(n-1) multiplier: 1 fan is 2, 2 fan is 4, 3 fan is 8, 4 fan is 16, 5 fan is 32, and 6 fan is 64. [[term:self-draw-bonus]] adds 2 points to each self-draw payment without adding fan."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "“自摸 +2 分”不是“自摸 +1 番”。先算番对应分，再给每笔自摸赔付加 2 分。",
+          "en": "\"Self-draw +2 points\" is not \"+1 fan.\" Convert fan to points first, then add 2 to each self-draw payment."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "三番自摸",
+          "en": "Three-fan self-draw"
+        },
+        "body": {
+          "zh": "清一色 3 番先换算为 8 分；若自摸，每个未胡家每笔付 8+2=10 分。",
+          "en": "Pure suit is 3 fan, worth 8 points. If self-drawn, each not-yet-won player pays 8+2=10 points."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "3p",
+          "2p",
+          "3p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "8p",
+          "8p",
+          "9p",
+          "9p"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-02-q1",
+        "prompt": {
+          "zh": "4 番按 §K 是多少分？",
+          "en": "Under K, how many points is 4 fan?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "16 分",
+              "en": "16 points"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "8 分",
+              "en": "8 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "32 分",
+              "en": "32 points"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "底分 2，4 番倍率 ×8，所以是 16 分。",
+          "en": "Base score is 2, and 4 fan is x8, so it is 16 points."
+        },
+        "terms": [
+          "fan",
+          "base-score"
+        ]
+      },
+      {
+        "id": "L3-02-q2",
+        "prompt": {
+          "zh": "3 番自摸时，每个未胡家每笔付多少？",
+          "en": "For a 3-fan self-draw, how much does each not-yet-won player pay?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "8 分",
+              "en": "8 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "10 分",
+              "en": "10 points"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "12 分",
+              "en": "12 points"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "3 番 8 分，自摸加底 +2 分，所以每笔 10 分。",
+          "en": "3 fan is 8 points, plus the 2-point self-draw add-on, so each payment is 10."
+        },
+        "terms": [
+          "self-draw",
+          "self-draw-bonus",
+          "teaching-points"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-03",
+    "level": "L3",
+    "index": 3,
+    "title": {
+      "zh": "高番形态",
+      "en": "High-pattern hands"
+    },
+    "goal": {
+      "zh": "识别龙七对、清七对、清幺九、天胡和地胡。",
+      "en": "Recognize Dragon seven pairs, Pure seven pairs, Pure terminal hand, Heavenly hand, and Earthly hand."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "§K 的 5 番形态包括 [[term:dragon-seven-pairs]]、[[term:pure-seven-pairs]]、[[term:pure-terminal-hand]]；6 番形态包括 [[term:heavenly-hand]]、[[term:earthly-hand]]、清龙七对。龙七对里的四张相同已经支撑番型，计算 [[term:root]] 时要减 1 根。",
+          "en": "K has 5-fan patterns including [[term:dragon-seven-pairs]], [[term:pure-seven-pairs]], and [[term:pure-terminal-hand]]. The 6-fan patterns include [[term:heavenly-hand]], [[term:earthly-hand]], and Pure dragon seven pairs. The four identical tiles inside Dragon seven pairs support the pattern, so one [[term:root]] is subtracted."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "天胡/地胡需要牌桌记录庄家与摸牌轮次；本应用只按 §K 和牌桌字段做默认教学判定。",
+          "en": "Heavenly and Earthly hands need dealer and draw-turn state; this app uses K plus table-state fields for the default teaching judgment."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "清龙七对",
+          "en": "Pure dragon seven pairs"
+        },
+        "body": {
+          "zh": "全部筒牌、七对结构，并含四张 1 筒，是清龙七对 6 番。",
+          "en": "One suit, Seven pairs structure, and four 1 Dots make Pure dragon seven pairs at 6 fan."
+        },
+        "tiles": [
+          "1p",
+          "1p",
+          "1p",
+          "1p",
+          "2p",
+          "2p",
+          "3p",
+          "3p",
+          "4p",
+          "4p",
+          "5p",
+          "5p",
+          "6p",
+          "6p"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-03-q1",
+        "prompt": {
+          "zh": "龙七对按 §K 是几番？",
+          "en": "Under K, how many fan is Dragon seven pairs?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "3 番",
+              "en": "3 fan"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "5 番",
+              "en": "5 fan"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "6 番",
+              "en": "6 fan"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "龙七对是暗七对加四张相同，§K 计 5 番。",
+          "en": "Dragon seven pairs is concealed Seven pairs with four identical tiles; K counts it as 5 fan."
+        },
+        "terms": [
+          "dragon-seven-pairs",
+          "seven-pairs",
+          "root"
+        ]
+      },
+      {
+        "id": "L3-03-q2",
+        "prompt": {
+          "zh": "清龙七对按 §K 是几番？",
+          "en": "Under K, how many fan is Pure dragon seven pairs?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "5 番",
+              "en": "5 fan"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "6 番",
+              "en": "6 fan"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "8 番",
+              "en": "8 fan"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "清一色的龙七对是 6 番；不是清七对和龙七对相加。",
+          "en": "Pure dragon seven pairs is 6 fan; it is not Pure seven pairs plus Dragon seven pairs."
+        },
+        "terms": [
+          "pure-seven-pairs",
+          "dragon-seven-pairs",
+          "fan"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-04",
+    "level": "L3",
+    "index": 4,
+    "title": {
+      "zh": "杠分刮风下雨",
+      "en": "Kong points"
+    },
+    "goal": {
+      "zh": "掌握直杠、巴杠、暗杠、抢杠和退税。",
+      "en": "Learn point Kong, add-on Kong, concealed Kong, robbing a Kong, and tax refund."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:kong-bonuses]] 在 §K 中独立于胡牌结算：直杠由点杠者一家赔 4 分，巴杠每个未胡家赔 2 分，暗杠每个未胡家赔 4 分。若流局时杠者未听牌，要退还杠分；巴杠被抢杠胡时，本次杠分不成立。",
+          "en": "[[term:kong-bonuses]] are independent from win settlement under K: point Kong is paid by the discarder for 4 points, add-on Kong is paid by each not-yet-won player for 2 points, and concealed Kong is paid by each not-yet-won player for 4 points. If the Kong owner is not tenpai at draw, Kong points are refunded; if an add-on Kong is robbed, that Kong point event is void."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "杠分先记事件，结局时再合并进总 [[term:score-settlement]]；这能处理退税和已胡退场。",
+          "en": "Record Kong events first, then merge them into final [[term:score-settlement]]; this handles tax refund and players who already won."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "暗杠",
+          "en": "Concealed Kong"
+        },
+        "body": {
+          "zh": "未胡家还剩三家时，暗杠每家 4 分，总共得到 12 分杠分；若流局未听，要退回。",
+          "en": "With three not-yet-won payers, a concealed Kong receives 4 points from each, for 12 Kong points total; if the owner is not tenpai at draw, those points are refunded."
+        },
+        "tiles": [
+          "5p",
+          "5p",
+          "5p",
+          "5p",
+          "2t",
+          "3t",
+          "4t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-04-q1",
+        "prompt": {
+          "zh": "直杠的杠分由谁付？",
+          "en": "Who pays for a point Kong?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "点杠者一家付 4 分",
+              "en": "The discarder pays 4 points"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "每个未胡家各付 4 分",
+              "en": "Each not-yet-won player pays 4"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "不产生杠分",
+              "en": "No Kong points are produced"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "直杠是点杠者一家赔 4 分。",
+          "en": "A point Kong is paid by the discarder for 4 points."
+        },
+        "terms": [
+          "kong",
+          "kong-bonuses",
+          "score-settlement"
+        ]
+      },
+      {
+        "id": "L3-04-q2",
+        "prompt": {
+          "zh": "巴杠被抢杠胡时，本次杠分怎样处理？",
+          "en": "If an add-on Kong is robbed for a win, what happens to that Kong point event?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "照常收 2 分",
+              "en": "It still collects 2 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "本次杠分不成立",
+              "en": "This Kong point event is void"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "自动变成暗杠",
+              "en": "It becomes a concealed Kong"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "§K 写明巴杠可被抢杠胡；被抢时本次杠分不成立。",
+          "en": "K allows robbing an add-on Kong; when robbed, that Kong point event is void."
+        },
+        "terms": [
+          "kong",
+          "kong-bonuses",
+          "win"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-05",
+    "level": "L3",
+    "index": 5,
+    "title": {
+      "zh": "血战多家结算",
+      "en": "Fight-to-the-end payments"
+    },
+    "goal": {
+      "zh": "区分自摸、点炮和一炮多响的付款方向。",
+      "en": "Distinguish payment direction for self-draw, discard win, and multiple wins on one discard."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:point-payment]] 是点炮者一家承担；自摸是每个未胡家各赔一笔；[[term:multi-win]] 时点炮者要分别向每个胡牌家全额赔付。已胡退场者不再参与后续自摸和杠分。",
+          "en": "[[term:point-payment]] is paid by the discarder. Self-draw is paid once by each not-yet-won player. For [[term:multi-win]], the discarder pays each winner separately. Players who already won sit out later self-draw and Kong payments."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "血战结算先看“谁还没胡”，再看这笔是点炮、自摸还是杠分。",
+          "en": "In fight-to-the-end settlement, first ask who has not won yet, then ask whether this event is discard win, self-draw, or Kong points."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "一炮多响",
+          "en": "Multiple wins on one discard"
+        },
+        "body": {
+          "zh": "如果一张 3 筒让两家各以 1 番胡牌，点炮者分别赔两笔，每笔 2 分。",
+          "en": "If one 3 Dots discard lets two players win at 1 fan, the discarder pays two separate payments, 2 points each."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "9p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-05-q1",
+        "prompt": {
+          "zh": "一炮多响时，点炮者怎样赔？",
+          "en": "In multiple wins on one discard, how does the discarder pay?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "只向最近的一家赔",
+              "en": "Pays only the nearest winner"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "向每个胡牌家分别全额赔",
+              "en": "Pays each winner separately in full"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "由所有未胡家平摊",
+              "en": "Shared by all not-yet-won players"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "§K 明确一炮多响由点炮者对每个胡家分别全赔。",
+          "en": "K says the discarder pays each winner separately in full."
+        },
+        "terms": [
+          "multi-win",
+          "point-payment",
+          "score-settlement"
+        ]
+      },
+      {
+        "id": "L3-05-q2",
+        "prompt": {
+          "zh": "一家已胡退场后，后续自摸时是否继续赔？",
+          "en": "After a player has already won, do they keep paying later self-draw events?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不参与后续自摸赔付",
+              "en": "They do not pay later self-draw events"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "每次仍然付",
+              "en": "They still pay every time"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只付杠分不付胡牌",
+              "en": "They pay only Kong points"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "血战到底是一家胡后退场，其余继续。",
+          "en": "In fight to the end, a winner exits while the others continue."
+        },
+        "terms": [
+          "fight-to-the-end",
+          "self-draw",
+          "score-settlement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-06",
+    "level": "L3",
+    "index": 6,
+    "title": {
+      "zh": "封顶与叠加",
+      "en": "Cap and add-fan"
+    },
+    "goal": {
+      "zh": "正确处理 [[term:score-cap]]、杠上花、杠上炮和根。",
+      "en": "Correctly apply [[term:score-cap]], Kong draw, Kong discard, and roots."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "§K 的加番项在最大番型上叠加：[[term:kong-draw-win]] +1 番，杠上炮 +1 番，[[term:root]] 每根 +1 番；但单次胡牌总番以 8 番 [[term:score-cap]]，8 番基础值是 256 分。[[term:self-draw-bonus]] 在封顶后的每笔自摸付款再 +2 分。",
+          "en": "K add-fan items stack on the highest pattern: [[term:kong-draw-win]] is +1 fan, Kong discard is +1 fan, and each [[term:root]] is +1 fan. A single win is capped at 8 fan by [[term:score-cap]], whose base value is 256 points. [[term:self-draw-bonus]] adds 2 points to each self-draw payment after the cap."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "封顶限制的是胡牌总番，不取消杠分独立结算，也不把自摸加底变成番。",
+          "en": "The cap limits total win fan; it does not cancel independent Kong points or turn the self-draw add-on into fan."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "六番加四番",
+          "en": "Six fan plus four add-fan"
+        },
+        "body": {
+          "zh": "清龙七对 6 番，若另有杠上花、杠上炮和 2 根，共 10 番，但按 8 番封顶，基础胡牌值 256 分；若自摸，每笔 258 分。",
+          "en": "Pure dragon seven pairs is 6 fan. With Kong draw, Kong discard, and 2 roots, raw total is 10 fan, but it caps at 8 fan for 256 base points; if self-drawn, each payment is 258."
+        },
+        "tiles": [
+          "1p",
+          "1p",
+          "1p",
+          "1p",
+          "2p",
+          "2p",
+          "3p",
+          "3p",
+          "4p",
+          "4p",
+          "5p",
+          "5p",
+          "6p",
+          "6p"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-06-q1",
+        "prompt": {
+          "zh": "单次胡牌 9 番按 §K 算几番？",
+          "en": "Under K, a 9-fan win is scored as how many fan?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "8 番",
+              "en": "8 fan"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "9 番",
+              "en": "9 fan"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "6 番",
+              "en": "6 fan"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "单次胡牌总番 8 番封顶。",
+          "en": "A single win is capped at 8 fan."
+        },
+        "terms": [
+          "score-cap",
+          "fan"
+        ]
+      },
+      {
+        "id": "L3-06-q2",
+        "prompt": {
+          "zh": "8 番自摸时，每笔胡牌赔付是多少？",
+          "en": "For an 8-fan self-draw, how much is each win payment?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "256 分",
+              "en": "256 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "258 分",
+              "en": "258 points"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "512 分",
+              "en": "512 points"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "8 番基础 256 分，自摸加底 +2 分，所以每笔 258 分。",
+          "en": "8 fan is 256 base points; self-draw adds 2, so each payment is 258."
+        },
+        "terms": [
+          "score-cap",
+          "self-draw-bonus",
+          "self-draw"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-07",
+    "level": "L3",
+    "index": 7,
+    "title": {
+      "zh": "期望与取舍",
+      "en": "Return and tradeoff"
+    },
+    "goal": {
+      "zh": "用 §K 积分理解速度、番型和风险的取舍。",
+      "en": "Use K points to reason about speed, pattern value, and risk."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:expected-value]] 不是背公式，而是比较“更快胡的小番”和“更慢做大的高番”。例如 3 番自摸三家各 10 分，总收入 30 分；5 番点炮是一家赔 32 分。两者接近，但风险、剩张和对手状态不同。",
+          "en": "[[term:expected-value]] is not memorizing formulas; it compares a faster small win with a slower larger pattern. For example, a 3-fan self-draw from three players collects 10 each, 30 total; a 5-fan discard win collects 32 from one player. They are close, but risk, remaining counts, and opponent state differ."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "做牌不只看“几番”，还要看还剩几张、是否已经听、别人是否接近胡。",
+          "en": "Hand direction is not only \"how many fan\"; also check remaining counts, readiness, and whether opponents are close."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "三番自摸 vs 五番点炮",
+          "en": "Three-fan self-draw vs five-fan discard win"
+        },
+        "body": {
+          "zh": "3 番自摸三家各 10 分合计 30；5 番点炮单家 32 分。若 3 番听牌更宽，未必比强做 5 番差。",
+          "en": "A 3-fan self-draw from three players totals 30; a 5-fan discard win from one player is 32. If the 3-fan hand has wider waits, it may be better than forcing 5 fan."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "3p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "5t",
+          "5t",
+          "5t",
+          "6t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-07-q1",
+        "prompt": {
+          "zh": "3 番自摸三家都未胡时，总共收入多少教学积分？",
+          "en": "If a 3-fan self-draw is paid by three not-yet-won players, what is the total received?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "24 分",
+              "en": "24 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "30 分",
+              "en": "30 points"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "32 分",
+              "en": "32 points"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "3 番 8 分，自摸每笔 10 分，三家合计 30 分。",
+          "en": "3 fan is 8; self-draw makes each payment 10; three payers total 30."
+        },
+        "terms": [
+          "expected-value",
+          "self-draw-bonus",
+          "teaching-points"
+        ]
+      },
+      {
+        "id": "L3-07-q2",
+        "prompt": {
+          "zh": "只看番数就能决定最佳打法吗？",
+          "en": "Can fan value alone decide the best play?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不能，还要看剩张、速度和风险",
+              "en": "No; remaining counts, speed, and risk also matter"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "可以，番越高一定越好",
+              "en": "Yes; higher fan is always better"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只看对手画像",
+              "en": "Only opponent profile matters"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "L3 后的判断要把算分和 L4 的剩张/风险合并。",
+          "en": "After L3, decisions combine scoring with L4 remaining counts and risk."
+        },
+        "terms": [
+          "expected-value",
+          "remaining-counts",
+          "defense"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L3-08",
+    "level": "L3",
+    "index": 8,
+    "title": {
+      "zh": "L3 综合",
+      "en": "L3 synthesis"
+    },
+    "goal": {
+      "zh": "综合判断番型、分值、赔付方向和流局结算。",
+      "en": "Combine pattern, point value, payment direction, and draw settlement."
+    },
+    "duration": 9,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "L3 的完整顺序是：确认胡牌和缺门，找最大番型，叠加加番，应用封顶，按自摸/点炮/一炮多响决定谁赔谁，最后把杠分、花猪和查大叫并入 [[term:score-settlement]]。",
+          "en": "The full L3 order is: confirm win and void-suit rule, choose the highest pattern, add fan items, apply the cap, decide who pays whom for self-draw, discard win, or multiple wins, then merge Kong points, flowery pig, and tenpai check into [[term:score-settlement]]."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "通关测验按 §K 金标；错题术语会进入今日复习。",
+          "en": "The gate quiz follows K golden values; missed terms go into today's review."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "查大叫",
+          "en": "Tenpai check"
+        },
+        "body": {
+          "zh": "流局未满三家胡时，花猪向每个非花猪家赔 32 分；未听者按听牌家所听最大番型对应分赔付，并退杠分。",
+          "en": "At a draw with fewer than three winners, a flowery pig pays 32 points to each non-pig; non-tenpai players pay each tenpai player by that player's maximum waiting pattern score and refund Kong points."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "9p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L3-08-q1",
+        "prompt": {
+          "zh": "花猪按 §K 向每个非花猪家赔多少？",
+          "en": "Under K, how much does a flowery pig pay each non-pig player?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "16 分",
+              "en": "16 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "32 分",
+              "en": "32 points"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "64 分",
+              "en": "64 points"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "§K 把花猪折算为 16 倍底分，即 32 分。",
+          "en": "K converts flowery pig to 16 times base score, which is 32 points."
+        },
+        "terms": [
+          "flowery-pig",
+          "base-score",
+          "score-settlement"
+        ]
+      },
+      {
+        "id": "L3-08-q2",
+        "prompt": {
+          "zh": "查大叫里未听者向谁赔？",
+          "en": "In tenpai check, whom does a non-tenpai player pay?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "每个听牌家",
+              "en": "Each tenpai player"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "只向庄家",
+              "en": "Only the dealer"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只向已胡家",
+              "en": "Only players who already won"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "未听者按听牌家所听最大番型对应分赔付。",
+          "en": "A non-tenpai player pays each tenpai player according to that player's maximum waiting pattern score."
+        },
+        "terms": [
+          "tenpai-check",
+          "ready-hand",
+          "score-settlement"
+        ]
+      },
+      {
+        "id": "L3-08-q3",
+        "prompt": {
+          "zh": "一手清七对点炮胡，§K 基础胡牌分是多少？",
+          "en": "A Pure seven pairs discard win has what base win value under K?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "16 分",
+              "en": "16 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "32 分",
+              "en": "32 points"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "64 分",
+              "en": "64 points"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "清七对 5 番，底分 2、倍率 ×16，所以是 32 分。",
+          "en": "Pure seven pairs is 5 fan; base 2 times x16 equals 32 points."
+        },
+        "terms": [
+          "pure-seven-pairs",
+          "fan",
+          "base-score"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L4-01",
+    "level": "L4",
+    "index": 1,
+    "title": {
+      "zh": "剩张与概率推算",
+      "en": "Remaining counts"
+    },
+    "goal": {
+      "zh": "用 [[term:remaining-counts]] 估计听牌是否还有活张。",
+      "en": "Use [[term:remaining-counts]] to estimate whether waits still have live copies."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:remaining-counts]] 的算法很朴素：每种牌最多 4 张，用自家手牌、舍牌河和公开面子中已经看见的张数去扣。若听 3 筒，但四张 3 筒都已经可见，就是死听。",
+          "en": "[[term:remaining-counts]] is simple: each tile has at most four copies, then visible copies from your hand, rivers, and open melds are subtracted. If you wait on 3 Dots but all four 3 Dots are visible, the wait is dead."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "本应用的概率模块不猜暗手，只做“可见牌扣减”的确定性计算。",
+          "en": "This app's probability module does not guess hidden hands; it performs deterministic visible-tile subtraction."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "死听",
+          "en": "Dead wait"
+        },
+        "body": {
+          "zh": "这手听 3 筒；如果四张 3 筒已经在可见牌里，剩张为 0，就不是好听牌。",
+          "en": "This hand waits on 3 Dots. If all four 3 Dots are already visible, remaining count is 0, so the wait is poor."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "9p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L4-01-q1",
+        "prompt": {
+          "zh": "每种无字牌最多有几张？",
+          "en": "How many copies can each suited tile have at most?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "3 张",
+              "en": "3 copies"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "4 张",
+              "en": "4 copies"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "9 张",
+              "en": "9 copies"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "三门 1-9 每种各 4 张，共 108 张。",
+          "en": "Each suited rank has four copies; three suits make 108 tiles."
+        },
+        "terms": [
+          "remaining-counts",
+          "sichuan-mahjong"
+        ]
+      },
+      {
+        "id": "L4-01-q2",
+        "prompt": {
+          "zh": "听牌剩张为 0 时，应怎样理解？",
+          "en": "What does a wait with 0 remaining copies mean?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "仍然一定能胡",
+              "en": "It will still certainly win"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "这门还没定缺",
+              "en": "The suit is not voided"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "这张听牌已经死了",
+              "en": "That wait is dead"
+            },
+            "correct": true
+          }
+        ],
+        "explanation": {
+          "zh": "剩张 0 说明已知牌里四张都出现了。",
+          "en": "Remaining 0 means all four copies are already visible."
+        },
+        "terms": [
+          "remaining-counts",
+          "ready-hand"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L4-02",
+    "level": "L4",
+    "index": 2,
+    "title": {
+      "zh": "听牌广度与质量",
+      "en": "Width and quality of waits"
+    },
+    "goal": {
+      "zh": "区分“听几种牌”和 [[term:wait-quality]]。",
+      "en": "Distinguish the number of wait types from [[term:wait-quality]]."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:multiple-waits]] 通常比单吊好，但真正要看 [[term:weighted-waits]]：两种听牌各剩 1 张，总进张只有 2；一种听牌剩 4 张，反而更厚。",
+          "en": "[[term:multiple-waits]] is usually better than a single wait, but [[term:weighted-waits]] matters: two wait types with one copy each total only 2 outs, while one wait type with four copies may be stronger."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "L2 数“听几种”，L4 再加一层“每种还剩几张”。",
+          "en": "L2 counts wait types; L4 adds how many copies remain for each type."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "多听不一定厚",
+          "en": "Wider is not always thicker"
+        },
+        "body": {
+          "zh": "如果听 3 筒和 6 条，但两者各剩 1 张，总进张 2；另一手只听 5 筒但剩 4 张，进张更厚。",
+          "en": "If a hand waits on 3 Dots and 6 Bamboo with one copy left each, total outs are 2. Another hand waiting only on 5 Dots with four copies left is thicker."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "4p",
+          "5p",
+          "6p",
+          "6t",
+          "7t",
+          "8t",
+          "2t",
+          "2t",
+          "3t",
+          "4t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L4-02-q1",
+        "prompt": {
+          "zh": "加权进张比较的核心是什么？",
+          "en": "What is the core of weighted wait comparison?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "只数有几种听牌",
+              "en": "Only count wait types"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "把每种听牌剩余张数合计",
+              "en": "Sum remaining copies for each wait"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "只看牌面是否好看",
+              "en": "Only inspect tile appearance"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "加权进张按剩张数计算总有效张。",
+          "en": "Weighted waits calculate total effective copies by remaining counts."
+        },
+        "terms": [
+          "weighted-waits",
+          "remaining-counts",
+          "effective-tiles"
+        ]
+      },
+      {
+        "id": "L4-02-q2",
+        "prompt": {
+          "zh": "两门听牌各剩 1 张，总进张是多少？",
+          "en": "Two wait types with one copy left each give how many total outs?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "2 张",
+              "en": "2 copies"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "4 张",
+              "en": "4 copies"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "8 张",
+              "en": "8 copies"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "1+1=2。",
+          "en": "1+1=2."
+        },
+        "terms": [
+          "weighted-waits",
+          "wait-quality"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L4-03",
+    "level": "L4",
+    "index": 3,
+    "title": {
+      "zh": "危险度与防守体系",
+      "en": "Risk and defense"
+    },
+    "goal": {
+      "zh": "用舍牌信息识别 [[term:risk-tile]] 与 [[term:safe-tile]]。",
+      "en": "Use discard information to identify [[term:risk-tile]] and [[term:safe-tile]]."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:defense]] 不是完全不进攻，而是在对手可能 [[term:ready-hand]] 时减少放出成胡牌的概率。[[term:discard-reading]] 看别人缺哪门、早打哪门、突然不打哪门，从而判断某张是不是 [[term:risk-tile]]。",
+          "en": "[[term:defense]] is not refusing to attack; it reduces the chance of dealing in when an opponent may be [[term:ready-hand]]. [[term:discard-reading]] asks which suit they void, which suit they discarded early, and which suit they suddenly stop discarding to judge whether a tile is a [[term:risk-tile]]."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "安全只是相对安全；本应用不会把暗手未知信息当成确定事实。",
+          "en": "Safety is relative; this app does not treat unknown hidden hands as certain facts."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "早打和晚打",
+          "en": "Early and late discards"
+        },
+        "body": {
+          "zh": "对手早早打万，后来一直不打筒，说明筒可能更危险；此时筒里的生张要谨慎。",
+          "en": "If an opponent discarded Characters early but later stops discarding Dots, Dots may be more dangerous; fresh Dot tiles need caution."
+        },
+        "tiles": [
+          "2p",
+          "5p",
+          "8p",
+          "3t",
+          "4t",
+          "5t",
+          "7w",
+          "8w",
+          "9w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L4-03-q1",
+        "prompt": {
+          "zh": "防守的主要目标是什么？",
+          "en": "What is the main goal of defense?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "减少放出成胡牌的风险",
+              "en": "Reduce the risk of discarding a winning tile"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "永远不胡",
+              "en": "Never win"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只打最大番",
+              "en": "Only chase the highest fan"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "防守是在风险变高时调整舍牌。",
+          "en": "Defense adjusts discards when risk rises."
+        },
+        "terms": [
+          "defense",
+          "risk-tile"
+        ]
+      },
+      {
+        "id": "L4-03-q2",
+        "prompt": {
+          "zh": "看舍牌读手能确定对手暗手吗？",
+          "en": "Can discard reading know an opponent's hidden hand with certainty?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不能，只能形成风险判断",
+              "en": "No; it only forms risk judgments"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "可以，完全确定",
+              "en": "Yes, completely"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只在自摸时可以",
+              "en": "Only on self-draw"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "暗手未知，只能基于可见信息推断。",
+          "en": "Hidden hands remain unknown; visible information only supports inference."
+        },
+        "terms": [
+          "discard-reading",
+          "risk-tile",
+          "safe-tile"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L4-04",
+    "level": "L4",
+    "index": 4,
+    "title": {
+      "zh": "血战中后期决策",
+      "en": "Mid-late fight-to-the-end decisions"
+    },
+    "goal": {
+      "zh": "在有人已胡退场后，调整速度、风险和结算预期。",
+      "en": "Adjust speed, risk, and settlement expectation after players have won and exited."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:fight-to-the-end]] 的中后期与开局不同：已胡家退场，付款人数减少，危险信息增多。自摸少一个未胡家就少一笔；点炮仍由点炮者一家承担。此时要把 [[term:score-settlement]] 和防守一起看。",
+          "en": "The mid-late stage of [[term:fight-to-the-end]] differs from the opening: winners exit, payer count shrinks, and risk information increases. A self-draw loses one payment for each exited player; a discard win is still paid by the discarder. Read [[term:score-settlement]] together with defense."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "只剩两家未胡时，防守价值会变高，因为每张舍牌都更集中地影响你和对手。",
+          "en": "When only two players have not won, defense becomes more valuable because each discard affects you and the opponent more directly."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "已胡退场",
+          "en": "Winner exits"
+        },
+        "body": {
+          "zh": "三家未胡时，3 番自摸可收三笔；已有一家胡后，只收两笔。打法要随付款人数变化。",
+          "en": "With three not-yet-won players, a 3-fan self-draw receives three payments; after one player wins, it receives two. Play should adjust to payer count."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "3p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "5t",
+          "5t",
+          "5t",
+          "6t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L4-04-q1",
+        "prompt": {
+          "zh": "一家已胡退场后，后续自摸付款人数会怎样？",
+          "en": "After one player wins and exits, what happens to later self-draw payer count?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "减少",
+              "en": "It decreases"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "增加",
+              "en": "It increases"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "固定不变",
+              "en": "It never changes"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "已胡家退场，不再参与后续自摸赔付。",
+          "en": "A player who has won exits and does not pay later self-draw events."
+        },
+        "terms": [
+          "fight-to-the-end",
+          "self-draw",
+          "score-settlement"
+        ]
+      },
+      {
+        "id": "L4-04-q2",
+        "prompt": {
+          "zh": "血战后期是否还要看防守？",
+          "en": "Should defense still matter late in fight-to-the-end?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "要，风险信息更多",
+              "en": "Yes, risk information is richer"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "不要，只看摸牌",
+              "en": "No, only draws matter"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只看花猪",
+              "en": "Only flowery pig matters"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "后期对手范围更窄，危险牌判断更重要。",
+          "en": "Opponent ranges narrow late, making risk-tile judgment more important."
+        },
+        "terms": [
+          "defense",
+          "risk-tile",
+          "fight-to-the-end"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L4-05",
+    "level": "L4",
+    "index": 5,
+    "title": {
+      "zh": "对手类型应对",
+      "en": "Opponent profiles"
+    },
+    "goal": {
+      "zh": "用 [[term:opponent-profile]] 调整进攻和防守。",
+      "en": "Use [[term:opponent-profile]] to adjust attack and defense."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "本应用的 AI 画像包括稳健、激进、保守、牌效、均衡。激进家更愿意碰杠，保守家更容易过，牌效家偏向保留最多进张。画像不是读心，只是帮助你选择更合适的 [[term:hand-direction]]。",
+          "en": "This app's AI profiles are steady, aggressive, conservative, efficiency-focused, and balanced. Aggressive players claim more, conservative players pass more, and efficiency players preserve more waits. A profile is not mind-reading; it helps choose a better [[term:hand-direction]]."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "对激进家，生张更要谨慎；对保守家，可以更重视自己进张。",
+          "en": "Against aggressive players, fresh tiles need more caution; against conservative players, you may weigh your own effective tiles more."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "激进家",
+          "en": "Aggressive player"
+        },
+        "body": {
+          "zh": "激进家频繁碰杠，说明其手牌公开信息多，但舍牌也更可能带来响应。",
+          "en": "An aggressive player who often Pungs and Kongs reveals more information, but your discards are also more likely to be claimed."
+        },
+        "tiles": [
+          "5p",
+          "5p",
+          "5p",
+          "2t",
+          "3t",
+          "4t",
+          "7w",
+          "8w",
+          "9w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L4-05-q1",
+        "prompt": {
+          "zh": "对手画像能直接证明暗手吗？",
+          "en": "Can an opponent profile prove the hidden hand?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不能，只是决策倾向",
+              "en": "No; it is only a decision tendency"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "能，等于明牌",
+              "en": "Yes; it reveals the hand"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只证明定缺门",
+              "en": "It only proves void suit"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "画像是倾向，不是确定信息。",
+          "en": "A profile is a tendency, not certain information."
+        },
+        "terms": [
+          "opponent-profile",
+          "discard-reading"
+        ]
+      },
+      {
+        "id": "L4-05-q2",
+        "prompt": {
+          "zh": "牌效家通常更重视什么？",
+          "en": "What does an efficiency-focused player usually value?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "更多进张",
+              "en": "More effective tiles"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "永远保守",
+              "en": "Always passing"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只做花猪",
+              "en": "Keeping all suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "牌效画像会偏向保留更多听牌和进张。",
+          "en": "The efficiency profile tends to preserve more waits and effective tiles."
+        },
+        "terms": [
+          "opponent-profile",
+          "tile-efficiency",
+          "effective-tiles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L4-06",
+    "level": "L4",
+    "index": 6,
+    "title": {
+      "zh": "变体规则提示",
+      "en": "Variant rule notes"
+    },
+    "goal": {
+      "zh": "认识换三张、平台差异和血流成河等 [[term:variant-rule]]，并区分默认对局。",
+      "en": "Recognize [[term:variant-rule]] notes such as tile exchange, platform differences, and Blood-flow Mahjong, while separating them from the default table."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:variant-rule]] 只作为规则提示：换三张、血流成河、平台差异以及天胡/地胡的细节口径，都可能因桌规变化。本应用默认对局仍是三门 108 张、定缺、碰杠不吃、血战到底，并按 §K 教学结算。",
+          "en": "[[term:variant-rule]] items are notes only: tile exchange, Blood-flow Mahjong, platform differences, and detailed Heavenly/Earthly timing may vary by table rules. This app's default table remains 108 suited tiles, void suit, Pung/Kong/no Chow, fight to the end, and K teaching settlement."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "变体提示卡不进入 engine 默认状态机；练习和牌桌仍按本应用默认规则。",
+          "en": "Variant notes do not enter the default engine state machine; drills and table play still use this app's default rules."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "非默认对局",
+          "en": "Non-default table"
+        },
+        "body": {
+          "zh": "如果某个平台要求开局换三张，那是变体规则；本应用默认牌桌不会先换牌。",
+          "en": "If a platform requires exchanging three tiles at the start, that is a variant rule; this app's default table does not exchange tiles first."
+        },
+        "tiles": [
+          "1p",
+          "4p",
+          "7p",
+          "2t",
+          "5t",
+          "8t",
+          "3w",
+          "6w",
+          "9w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L4-06-q1",
+        "prompt": {
+          "zh": "换三张在本应用默认牌桌中启用吗？",
+          "en": "Is tile exchange enabled in this app's default table?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不启用，只做变体提示",
+              "en": "No; it is only a variant note"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "每局强制启用",
+              "en": "Yes, every hand"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只在 L3 启用",
+              "en": "Only in L3"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "L4 只描述变体，不改默认 engine。",
+          "en": "L4 describes variants without changing the default engine."
+        },
+        "terms": [
+          "variant-rule"
+        ]
+      },
+      {
+        "id": "L4-06-q2",
+        "prompt": {
+          "zh": "本应用默认牌桌是否允许吃？",
+          "en": "Does this app's default table allow Chow claims?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不允许吃",
+              "en": "No Chow claims"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "允许吃",
+              "en": "Chow claims are allowed"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只允许吃万",
+              "en": "Only Characters can be claimed for Chow"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "默认规则仍是碰杠不吃。",
+          "en": "The default rule remains Pung/Kong/no Chow."
+        },
+        "terms": [
+          "no-chow",
+          "variant-rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L4-07",
+    "level": "L4",
+    "index": 7,
+    "title": {
+      "zh": "L4 综合",
+      "en": "L4 synthesis"
+    },
+    "goal": {
+      "zh": "把剩张、听牌质量、防守和对手画像放在同一决策里。",
+      "en": "Combine remaining counts, wait quality, defense, and opponent profile in one decision."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "L4 的核心是把 L2 的牌效、L3 的结算收益和 L4 的剩张/风险放在一起：宽听但死张多，可能不如窄听但活张厚；高番但危险大，也可能不如快速安全。",
+          "en": "L4 combines L2 efficiency, L3 settlement return, and L4 remaining counts and risk: a wide wait with many dead copies may be worse than a narrower live wait; a high-fan path with high danger may be worse than a fast safer line."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "先列事实，再做选择：剩张、听牌、对手、积分收益，分别写清楚。",
+          "en": "List facts before choosing: remaining counts, readiness, opponents, and point return should be separate."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "决策表",
+          "en": "Decision table"
+        },
+        "body": {
+          "zh": "候选 A 进张 4 张但危险较高；候选 B 进张 3 张但更安全。后期可能选 B，前期可能选 A。",
+          "en": "Candidate A has 4 outs but higher risk; candidate B has 3 outs and is safer. Late stage may choose B, early stage may choose A."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "4p",
+          "5p",
+          "6p",
+          "6t",
+          "7t",
+          "8t",
+          "2t",
+          "2t",
+          "3t",
+          "4t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L4-07-q1",
+        "prompt": {
+          "zh": "L4 决策应该只看进张数吗？",
+          "en": "Should L4 decisions look only at out count?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不，应同时看风险和收益",
+              "en": "No; also consider risk and return"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "是，进张数唯一重要",
+              "en": "Yes, out count is the only thing"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只看英文术语",
+              "en": "Only English terms matter"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "L4 把进张、风险和结算预期合并。",
+          "en": "L4 combines outs, risk, and settlement expectation."
+        },
+        "terms": [
+          "weighted-waits",
+          "risk-tile",
+          "expected-value"
+        ]
+      },
+      {
+        "id": "L4-07-q2",
+        "prompt": {
+          "zh": "宽听但全部死张，质量如何？",
+          "en": "How good is a wide wait if all copies are dead?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "质量差",
+              "en": "Poor quality"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "一定最好",
+              "en": "Always best"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "自动变成天胡",
+              "en": "It becomes Heavenly hand"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "听牌种类多但剩张为 0，无法带来真实进张。",
+          "en": "Many wait types with zero remaining copies do not provide real outs."
+        },
+        "terms": [
+          "wait-quality",
+          "remaining-counts",
+          "ready-hand"
+        ]
+      },
+      {
+        "id": "L4-07-q3",
+        "prompt": {
+          "zh": "变体规则在默认练习器中会改变判定吗？",
+          "en": "Do variant rules change default drill judgments?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不会",
+              "en": "No"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "会，全部启用",
+              "en": "Yes, all variants are enabled"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只改变牌面组件",
+              "en": "Only tile rendering changes"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "变体规则只做提示卡，不进默认 engine。",
+          "en": "Variant rules are notes only and do not enter the default engine."
+        },
+        "terms": [
+          "variant-rule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L5-01",
+    "level": "L5",
+    "index": 1,
+    "title": {
+      "zh": "整局规划",
+      "en": "Whole-hand planning"
+    },
+    "goal": {
+      "zh": "用 [[term:table-plan]] 把定缺、速度、做牌和风险连起来。",
+      "en": "Use [[term:table-plan]] to connect voiding, speed, hand direction, and risk."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "一局牌不是每摸一张才临时决定。[[term:table-plan]] 从开局就开始：先定缺，再判断求快还是做牌；中期比较进张和番型；后期把防守、剩张和 [[term:score-settlement]] 合并。",
+          "en": "A hand is not decided one draw at a time. A [[term:table-plan]] starts from the opening: declare the void suit, decide speed versus pattern-building, compare outs and fan in the middle, then combine defense, remaining counts, and [[term:score-settlement]] late."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "好规划不是固定路线，而是每轮用新信息更新路线。",
+          "en": "A good plan is not a fixed path; it updates with new information each turn."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "先快后稳",
+          "en": "Fast first, stable later"
+        },
+        "body": {
+          "zh": "定缺万后，先打万清缺；如果很快听牌，就求速度；若摸成清一色雏形，再考虑转高番。",
+          "en": "After voiding Characters, discard Characters first. If ready comes quickly, prioritize speed; if a Pure suit shape appears, consider a higher-fan turn."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "2t",
+          "2t",
+          "5t",
+          "5t",
+          "7w",
+          "8w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L5-01-q1",
+        "prompt": {
+          "zh": "整局规划的第一步通常是什么？",
+          "en": "What is usually the first step in whole-hand planning?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "定缺并清缺",
+              "en": "Declare and clear the void suit"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "先算封顶",
+              "en": "Calculate the cap first"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "保留三门",
+              "en": "Keep all three suits"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "四川麻将先定缺，胡牌前必须缺门。",
+          "en": "Sichuan Mahjong starts with void suit, and a win must clear that suit."
+        },
+        "terms": [
+          "table-plan",
+          "void-suit",
+          "one-suit-missing"
+        ]
+      },
+      {
+        "id": "L5-01-q2",
+        "prompt": {
+          "zh": "规划是否应该随摸牌和舍牌更新？",
+          "en": "Should the plan update with draws and discards?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "应该",
+              "en": "Yes"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "不应该",
+              "en": "No"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只在流局后更新",
+              "en": "Only after a draw"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "新的剩张、听牌和风险会改变最优路线。",
+          "en": "New remaining counts, readiness, and risk can change the best route."
+        },
+        "terms": [
+          "table-plan",
+          "remaining-counts",
+          "risk-tile"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L5-02",
+    "level": "L5",
+    "index": 2,
+    "title": {
+      "zh": "复盘方法论",
+      "en": "Review method"
+    },
+    "goal": {
+      "zh": "用 [[term:review-method]] 把一局牌拆成可改进的步骤。",
+      "en": "Use a [[term:review-method]] to turn a hand into improvable steps."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:review-method]] 分四层：事实、选择、结果、下次计划。事实包括定缺门、可见牌、听牌和结算；选择包括每次舍牌、碰杠和胡；结果包括番型和教学积分；下次计划只写一条可执行改进。",
+          "en": "A [[term:review-method]] has four layers: facts, choices, results, and next plan. Facts include void suit, visible tiles, waits, and settlement. Choices include discards, Pung/Kong, and wins. Results include pattern and teaching points. The next plan should be one actionable improvement."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "复盘不要只说“运气不好”；先找一个能控制的选择。",
+          "en": "Do not review only as \"bad luck\"; find one controllable choice first."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "复盘卡",
+          "en": "Review card"
+        },
+        "body": {
+          "zh": "事实：定缺万、听 3 筒剩 0 张。选择：仍然追这门。结果：未听流局。下次：听牌前先看剩张。",
+          "en": "Fact: void Characters, wait on 3 Dots with 0 remaining. Choice: still chased that wait. Result: draw while not ready. Next: check remaining counts before committing."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "9p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L5-02-q1",
+        "prompt": {
+          "zh": "复盘的“事实”应包含什么？",
+          "en": "What belongs in the \"facts\" layer of review?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "可见牌、听牌、结算等可观察信息",
+              "en": "Visible tiles, waits, settlement, and other observable information"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "只写情绪",
+              "en": "Only emotion"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "随便猜对手暗手",
+              "en": "Random guesses about hidden hands"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "事实层必须来自可见或 engine 可推导信息。",
+          "en": "Facts must come from visible or engine-derived information."
+        },
+        "terms": [
+          "review-method",
+          "remaining-counts",
+          "score-settlement"
+        ]
+      },
+      {
+        "id": "L5-02-q2",
+        "prompt": {
+          "zh": "好的下次计划应该怎样？",
+          "en": "What should a good next plan look like?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "一条可执行改进",
+              "en": "One actionable improvement"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "越长越好",
+              "en": "As long as possible"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只写“赢”",
+              "en": "Only write \"win\""
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "复盘要转成下一局能做的动作。",
+          "en": "Review should become an action you can use next hand."
+        },
+        "terms": [
+          "review-method",
+          "table-plan"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L5-03",
+    "level": "L5",
+    "index": 3,
+    "title": {
+      "zh": "期望值直觉",
+      "en": "Expected value intuition"
+    },
+    "goal": {
+      "zh": "把 [[term:expected-value]] 用在番型收益、速度和风险的比较上。",
+      "en": "Apply [[term:expected-value]] to compare pattern return, speed, and risk."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "[[term:expected-value]] 的直觉是：收益 × 发生机会，再减去风险。3 番自摸三家可收 30 分，5 番点炮收 32 分；如果 3 番路线剩张明显更多、风险更低，它可能是更好的选择。",
+          "en": "[[term:expected-value]] intuition is return times chance, then adjusted for risk. A 3-fan self-draw from three players receives 30 points, and a 5-fan discard win receives 32; if the 3-fan path has many more live outs and lower risk, it can be better."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "warn",
+        "body": {
+          "zh": "期望值是决策框架，不是承诺结果；单局仍会波动。",
+          "en": "Expected value is a decision frame, not a promised result; a single hand can still vary."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "同分附近",
+          "en": "Similar returns"
+        },
+        "body": {
+          "zh": "两条路线收益接近时，优先比较剩张和危险度，而不是执着于名义番数。",
+          "en": "When two routes have similar return, compare remaining counts and danger before fixating on nominal fan value."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "3p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "5t",
+          "5t",
+          "5t",
+          "6t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L5-03-q1",
+        "prompt": {
+          "zh": "3 番自摸三家未胡时为什么接近 5 番点炮？",
+          "en": "Why can a 3-fan self-draw with three payers be close to a 5-fan discard win?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "3 番自摸总收 30 分，5 番点炮 32 分",
+              "en": "3-fan self-draw totals 30, while 5-fan discard win is 32"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "两者都固定 2 分",
+              "en": "Both are fixed at 2 points"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "自摸没有加底",
+              "en": "Self-draw has no add-on"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "3 番 8 分，自摸每笔 10 分，三笔合计 30；5 番是 32 分。",
+          "en": "3 fan is 8, self-draw makes each payment 10, three payments total 30; 5 fan is 32."
+        },
+        "terms": [
+          "expected-value",
+          "self-draw-bonus",
+          "fan"
+        ]
+      },
+      {
+        "id": "L5-03-q2",
+        "prompt": {
+          "zh": "期望值能保证单局结果吗？",
+          "en": "Does expected value guarantee one-hand results?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "不能",
+              "en": "No"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "能",
+              "en": "Yes"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只在天胡时能",
+              "en": "Only for Heavenly hand"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "它是长期决策框架，不是单局承诺。",
+          "en": "It is a long-run decision frame, not a single-hand promise."
+        },
+        "terms": [
+          "expected-value"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L5-04",
+    "level": "L5",
+    "index": 4,
+    "title": {
+      "zh": "心态与节奏",
+      "en": "Mindset and tempo"
+    },
+    "goal": {
+      "zh": "在血战节奏中保持清晰、可复盘的决策。",
+      "en": "Keep clear, reviewable decisions in fight-to-the-end tempo."
+    },
+    "duration": 7,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "血战到底的节奏会让人急：有人先胡、付款人数变化、后期危险牌增多。稳定节奏的方法是只做下一步判断：是否清缺、是否听牌、这张是否危险、这笔结算预期是否值得。",
+          "en": "Fight to the end can feel fast: someone wins first, payer count changes, and late risk rises. A stable tempo asks only the next decision: is the void suit cleared, is the hand ready, is this tile dangerous, and is the expected settlement worth it?"
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "把复杂局面压缩成四个问题，比临场追求完美更可靠。",
+          "en": "Compressing a complex hand into four questions is more reliable than chasing perfection in the moment."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "四问",
+          "en": "Four questions"
+        },
+        "body": {
+          "zh": "先清缺；已清缺就看听牌；听牌后看剩张；风险升高时看防守。",
+          "en": "Clear the void first; after that check readiness; after ready check remaining copies; when risk rises, check defense."
+        },
+        "tiles": [
+          "3p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "2t",
+          "2t",
+          "5t",
+          "5t",
+          "6t",
+          "7w",
+          "8w"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L5-04-q1",
+        "prompt": {
+          "zh": "后期风险升高时，应该加入哪个判断？",
+          "en": "When late-stage risk rises, what judgment should be added?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "防守和危险牌",
+              "en": "Defense and risk tiles"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "只看牌面美观",
+              "en": "Only tile appearance"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "永远暗杠",
+              "en": "Always concealed Kong"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "后期危险牌更关键。",
+          "en": "Risk tiles matter more late."
+        },
+        "terms": [
+          "defense",
+          "risk-tile",
+          "fight-to-the-end"
+        ]
+      },
+      {
+        "id": "L5-04-q2",
+        "prompt": {
+          "zh": "节奏稳定的关键是什么？",
+          "en": "What is the key to stable tempo?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "把局面拆成下一步可判断问题",
+              "en": "Break the situation into the next judgeable question"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "一次算完所有未来",
+              "en": "Calculate all future turns at once"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "不看定缺",
+              "en": "Ignore void suit"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "简化为可执行问题，减少误判。",
+          "en": "Simplifying to actionable questions reduces mistakes."
+        },
+        "terms": [
+          "table-plan",
+          "void-suit",
+          "ready-hand"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L5-05",
+    "level": "L5",
+    "index": 5,
+    "title": {
+      "zh": "实战讲牌",
+      "en": "Explain a table decision"
+    },
+    "goal": {
+      "zh": "用事实、判断和结算讲清一局川麻。",
+      "en": "Explain a Sichuan Mahjong hand through facts, decisions, and settlement."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "讲一局牌时，按“事实—判断—结果”组织：先说明定缺、可见牌与听牌；再说明为什么选择这次舍牌、碰杠或防守；最后按 §K 解释结算。双语标签只用于对照阅读，不是需要背诵的考核目标。",
+          "en": "Explain a hand as facts, decisions, and outcome: state the void suit, visible tiles, and waits; explain the discard, Kong, or defense choice; then explain settlement under K. Bilingual labels support reading and are not a memorization target."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "先说可见事实，再说可复核的判断；不要把猜测对手暗手当作事实。",
+          "en": "State observable facts before reviewable decisions; do not treat guesses about hidden hands as facts."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "讲清一手",
+          "en": "Explain one hand"
+        },
+        "body": {
+          "zh": "事实：定缺万，听 3 筒。判断：3 筒还有可见剩张，因此保持听牌而不转做高番。结果：若自摸清一色 3 番，每位未胡家按 §K 支付 10 教学积分。",
+          "en": "Fact: Characters are voided and the hand waits on 3 Dots. Decision: visible remaining copies support keeping the ready hand instead of switching to a higher-fan path. Outcome: a 3-fan Pure suit self-draw makes each not-yet-won player pay 10 teaching points under K."
+        },
+        "tiles": [
+          "1p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "9p",
+          "2p",
+          "3p",
+          "4p",
+          "5p",
+          "5p"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L5-05-q1",
+        "prompt": {
+          "zh": "讲一手牌时，最应该先说明什么？",
+          "en": "What should you explain first when reviewing a hand?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "定缺、可见牌和听牌等可观察事实",
+              "en": "Observable facts such as void suit, visible tiles, and waits"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "对手暗手的确定牌型",
+              "en": "A certain hidden hand for an opponent"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只说最后赢没赢",
+              "en": "Only whether the hand won"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "先给可观察事实，后面的判断和结算才可复核。",
+          "en": "Start with observable facts so the decision and settlement can be reviewed."
+        },
+        "terms": [
+          "void-suit",
+          "ready-hand",
+          "remaining-counts"
+        ]
+      },
+      {
+        "id": "L5-05-q2",
+        "prompt": {
+          "zh": "解释一局的结算，应以什么为准？",
+          "en": "What should determine a hand's settlement explanation?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "§K 和 scoring.ts 推导的结果",
+              "en": "The result derived from K and scoring.ts"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "临场猜一个数字",
+              "en": "A number guessed in the moment"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只看谁先胡",
+              "en": "Only who won first"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "番型、杠分和多家结算必须同 §K/scoring.ts 同源。",
+          "en": "Patterns, Kong points, and multi-player settlement must share K/scoring.ts as their source."
+        },
+        "terms": [
+          "score-settlement",
+          "fan",
+          "teaching-points"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L5-06",
+    "level": "L5",
+    "index": 6,
+    "title": {
+      "zh": "大师之路",
+      "en": "Mastery path"
+    },
+    "goal": {
+      "zh": "把 L0-L5 串成可继续练习的路线。",
+      "en": "Connect L0-L5 into a continuing practice path."
+    },
+    "duration": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "body": {
+          "zh": "到 L5 结束，你已经能认牌、定缺、判断面子、听牌、胡牌、牌效、血战流程、§K 算分、剩张和复盘。下一步不是增加更多概念，而是用练习器和牌桌反复验证每个判断。",
+          "en": "By the end of L5, you can identify tiles, void a suit, evaluate melds, waits, wins, efficiency, fight-to-the-end flow, K scoring, remaining counts, and review. The next step is not adding more concepts, but repeatedly validating each judgment through drills and the table."
+        }
+      },
+      {
+        "type": "callout",
+        "tone": "tip",
+        "body": {
+          "zh": "每次只挑一个弱项练：认牌、听牌、舍牌、算分或复盘。",
+          "en": "Practice one weak area at a time: tiles, waits, discards, scoring, or review."
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "zh": "下一组练习",
+          "en": "Next drill set"
+        },
+        "body": {
+          "zh": "若错在算分，做 score 练习器；若错在进张，做 discard 练习器；若错在剩张，回 L4-01 复盘。",
+          "en": "If scoring is weak, use the score drill; if outs are weak, use the discard drill; if remaining counts are weak, review L4-01."
+        },
+        "tiles": [
+          "2p",
+          "3p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "2t",
+          "2t",
+          "2t",
+          "5t",
+          "5t",
+          "6t",
+          "7t"
+        ],
+        "voidSuit": "w"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "L5-06-q1",
+        "prompt": {
+          "zh": "L5 后最适合怎样练？",
+          "en": "What is the best way to practice after L5?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "针对一个弱项反复练",
+              "en": "Drill one weak area repeatedly"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "一次改所有习惯",
+              "en": "Change every habit at once"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "不再复盘",
+              "en": "Stop reviewing"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "弱项练习更容易形成稳定改进。",
+          "en": "Focused weak-area practice produces steadier improvement."
+        },
+        "terms": [
+          "review-method",
+          "table-plan"
+        ]
+      },
+      {
+        "id": "L5-06-q2",
+        "prompt": {
+          "zh": "score 练习器的判定应来自哪里？",
+          "en": "Where should score drill judgments come from?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "scoring.ts 和 §K",
+              "en": "scoring.ts and K"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "临场猜测",
+              "en": "Guessing"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "变体规则默认开启",
+              "en": "Default-enabled variants"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "算分练习器和课程数值必须与 §K/scoring.ts 同源。",
+          "en": "Score drill and lesson values must share K/scoring.ts as their source."
+        },
+        "terms": [
+          "score-settlement",
+          "fan",
+          "variant-rule"
+        ]
+      },
+      {
+        "id": "L5-06-q3",
+        "prompt": {
+          "zh": "本应用的默认学习闭环是什么？",
+          "en": "What is this app's default learning loop?"
+        },
+        "options": [
+          {
+            "label": {
+              "zh": "课程、练习器、牌桌、复盘",
+              "en": "Lessons, drills, table, review"
+            },
+            "correct": true
+          },
+          {
+            "label": {
+              "zh": "只看词典",
+              "en": "Glossary only"
+            },
+            "correct": false
+          },
+          {
+            "label": {
+              "zh": "只打一局不复盘",
+              "en": "Play one hand without review"
+            },
+            "correct": false
+          }
+        ],
+        "explanation": {
+          "zh": "课程建立概念，练习器验证点，牌桌连成整局，复盘形成下次计划。",
+          "en": "Lessons build concepts, drills verify points, the table connects a whole hand, and review creates the next plan."
+        },
+        "terms": [
+          "review-method",
+          "table-plan",
+          "teaching-points"
+        ]
+      }
+    ]
+  }
+]

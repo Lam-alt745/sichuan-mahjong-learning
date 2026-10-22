@@ -1,0 +1,673 @@
+[
+  {
+    "id": "sichuan-mahjong",
+    "zh": "四川麻将",
+    "en": "Sichuan Mahjong",
+    "definition": {
+      "zh": "只用筒、条、万三门、强调定缺和血战到底的麻将玩法。",
+      "en": "A Mahjong variant using Dots, Bamboo, and Characters, centered on voiding a suit and fighting to the end."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "dots",
+    "zh": "筒",
+    "en": "Dots / Circles",
+    "definition": {
+      "zh": "三门之一，牌面画铜钱圆点。",
+      "en": "One of the three suits, represented here with coin-like circles."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "bamboo",
+    "zh": "条",
+    "en": "Bamboo",
+    "definition": {
+      "zh": "三门之一，牌面画竹节棍。",
+      "en": "One of the three suits, represented here with bamboo sticks."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "characters",
+    "zh": "万",
+    "en": "Characters",
+    "definition": {
+      "zh": "三门之一，牌面写汉字数字和「萬」。",
+      "en": "One of the three suits, represented with Chinese numerals and the character 萬."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "honor-tiles",
+    "zh": "字牌",
+    "en": "Honor tiles",
+    "definition": {
+      "zh": "风牌和箭牌属于字牌；四川麻将本课程核心规则不用字牌。",
+      "en": "Winds and dragons are honor tiles; this Sichuan Mahjong ruleset does not use them."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "void-suit",
+    "zh": "定缺",
+    "en": "Void a suit",
+    "definition": {
+      "zh": "开局声明放弃一门，胡牌前必须打缺该门。",
+      "en": "Declaring one suit to void; a winning hand must have cleared that suit."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "declared-void-suit",
+    "zh": "定缺门",
+    "en": "Declared void suit",
+    "definition": {
+      "zh": "玩家声明要打缺的那一门。",
+      "en": "The suit a player has declared they must clear."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "pung",
+    "zh": "碰 / 刻子",
+    "en": "Pung",
+    "definition": {
+      "zh": "三张同门同点数的面子；四川麻将可以碰。",
+      "en": "A meld of three identical suited tiles; it may be claimed in Sichuan Mahjong."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "kong",
+    "zh": "杠",
+    "en": "Kong",
+    "definition": {
+      "zh": "四张同门同点数的组合；L3 按 §K 讲杠分。",
+      "en": "Four identical suited tiles; L3 teaches Kong points under K."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "chow",
+    "zh": "吃 / 顺子",
+    "en": "Chow",
+    "definition": {
+      "zh": "三张同门连续点数的结构；四川麻将不可吃别家牌。",
+      "en": "A run of three consecutive tiles in one suit; claiming a discard for Chow is not allowed in Sichuan Mahjong."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "meld",
+    "zh": "面子",
+    "en": "Meld",
+    "definition": {
+      "zh": "刻子或顺子等组成胡牌骨架的三张结构；四川麻将顺子只能手内形成。",
+      "en": "A three-tile structure such as Pung or Chow; in Sichuan Mahjong, Chow is only a hand structure."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "pair",
+    "zh": "将 / 对将",
+    "en": "Pair",
+    "definition": {
+      "zh": "两张同门同点数，标准胡牌结构里的雀头。",
+      "en": "Two identical suited tiles, the pair in a standard winning hand."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "win",
+    "zh": "胡",
+    "en": "Win / mahjong",
+    "definition": {
+      "zh": "完成符合规则的胡牌结构并满足缺门要求。",
+      "en": "Completing a legal winning structure while satisfying the void-suit requirement."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "self-draw",
+    "zh": "自摸",
+    "en": "Win from the wall / self-draw",
+    "definition": {
+      "zh": "自己摸到完成胡牌的牌。",
+      "en": "Winning by drawing the completing tile yourself."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "discard-win",
+    "zh": "点炮 / 放铳",
+    "en": "Win by discard",
+    "definition": {
+      "zh": "别人打出的牌让你完成胡牌。",
+      "en": "Winning on a tile discarded by another player."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "fight-to-the-end",
+    "zh": "血战到底",
+    "en": "Fight to the end / Bloody battle",
+    "definition": {
+      "zh": "一家胡牌后牌局不立刻结束，未胡者继续。",
+      "en": "The hand continues after one player wins; players who have not won keep playing."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "ready-hand",
+    "zh": "听牌",
+    "en": "Ready hand / tenpai",
+    "definition": {
+      "zh": "再来某些牌即可胡牌的状态。",
+      "en": "A state where specific incoming tiles would complete the hand."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "flowery-pig",
+    "zh": "花猪",
+    "en": "Flowery pig (no-void penalty)",
+    "definition": {
+      "zh": "流局时仍有三门、未完成定缺的状态；L3 按 §K 讲教学积分。",
+      "en": "A no-void state at draw with all three suits still present; L3 teaches the K teaching-point settlement."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "tenpai-check",
+    "zh": "查叫 / 查大叫",
+    "en": "Tenpai check / no-ten penalty",
+    "definition": {
+      "zh": "流局时检查是否听牌；L3 按 §K 讲查大叫。",
+      "en": "A draw-end check for ready hands; L3 teaches tenpai-check settlement under K."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "pure-suit",
+    "zh": "清一色",
+    "en": "Pure suit hand",
+    "definition": {
+      "zh": "整副胡牌只使用一门牌。",
+      "en": "A winning hand made from one suit only."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "all-triplets",
+    "zh": "对对胡",
+    "en": "All-triplets",
+    "definition": {
+      "zh": "由刻子/杠和一对将组成的胡牌形态。",
+      "en": "A winning shape made of triplets/quads and one pair."
+    },
+    "source": "EN",
+    "review": false
+  },
+  {
+    "id": "seven-pairs",
+    "zh": "七对",
+    "en": "Seven pairs",
+    "definition": {
+      "zh": "七个对子组成的特殊胡牌形态；本期只讲定义。",
+      "en": "A special winning shape made of seven pairs; Phase 1 covers the definition only."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "kong-bonuses",
+    "zh": "刮风下雨",
+    "en": "Kong bonuses",
+    "definition": {
+      "zh": "杠相关教学积分的俗称；§K 区分直杠、巴杠、暗杠。",
+      "en": "A colloquial term for Kong-related teaching points; K separates point, add-on, and concealed Kongs."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "kong-draw-win",
+    "zh": "杠上开花",
+    "en": "Win on a kong draw",
+    "definition": {
+      "zh": "杠后补牌正好胡牌；§K 作为加番项处理。",
+      "en": "Winning on the replacement draw after a Kong; K treats it as an add-fan item."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "safe-tile",
+    "zh": "安全牌",
+    "en": "Safe tile",
+    "definition": {
+      "zh": "相对不容易让别人胡的舍牌；本期只做入门直觉。",
+      "en": "A discard that is relatively less likely to deal into another player; Phase 1 covers only the intuition."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "no-chow",
+    "zh": "不可吃",
+    "en": "No Chow",
+    "definition": {
+      "zh": "四川麻将可以碰、杠，但不能吃别家打出的顺子。",
+      "en": "Sichuan Mahjong allows Pung and Kong, but not claiming a discard for Chow."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "one-suit-missing",
+    "zh": "缺门",
+    "en": "One suit missing",
+    "definition": {
+      "zh": "手牌中已经没有定缺那一门。",
+      "en": "The hand no longer contains the declared void suit."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "discard",
+    "zh": "舍牌",
+    "en": "Discard",
+    "definition": {
+      "zh": "从手牌中打出一张牌。",
+      "en": "Playing one tile out of the hand."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "effective-tiles",
+    "zh": "进张 / 有效牌",
+    "en": "Effective tiles",
+    "definition": {
+      "zh": "摸到后能改善手牌、进入听牌或增加听牌面的牌。",
+      "en": "Incoming tiles that improve the hand, reach tenpai, or increase waits."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "tile-efficiency",
+    "zh": "牌效率",
+    "en": "Tile efficiency",
+    "definition": {
+      "zh": "比较不同舍牌后保留多少进张与成组可能的思路。",
+      "en": "A way to compare discards by the waits and shape potential they preserve."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "defense",
+    "zh": "防守",
+    "en": "Defense",
+    "definition": {
+      "zh": "在对手可能听牌时，优先减少放出成胡牌风险的打法。",
+      "en": "Playing to reduce the risk of discarding a tile that completes another player's win."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "discard-reading",
+    "zh": "看舍牌读手",
+    "en": "Discard reading",
+    "definition": {
+      "zh": "通过别人已经打出的牌，推测其可能保留或不需要的门与结构。",
+      "en": "Using visible discards to infer suits and shapes another player may be keeping or rejecting."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "multiple-waits",
+    "zh": "多听",
+    "en": "Multiple waits",
+    "definition": {
+      "zh": "一手牌同时等待多种牌成胡，通常比单一等待更宽。",
+      "en": "A ready hand that can win on multiple incoming tiles, usually wider than a single wait."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "hand-direction",
+    "zh": "做牌方向",
+    "en": "Hand direction",
+    "definition": {
+      "zh": "围绕清缺、求快、保留对子/顺子等目标选择摸打路线。",
+      "en": "The plan behind discard choices, such as voiding, speed, pairs, or sequences."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "fan",
+    "zh": "番",
+    "en": "Fan",
+    "definition": {
+      "zh": "番型和加番项合成的等级；§K 只按最大番型计，再加杠上花、杠上炮、根等加番。",
+      "en": "The level from the highest pattern plus add-fan items such as Kong draw, Kong discard, and roots under K."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "base-score",
+    "zh": "底分",
+    "en": "Base score",
+    "definition": {
+      "zh": "§K 锁定底分为 2 分，番数通过倍率换算成教学积分。",
+      "en": "K fixes the base score at 2 points; fan values convert to teaching points through multipliers."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "score-cap",
+    "zh": "封顶",
+    "en": "Score cap",
+    "definition": {
+      "zh": "§K 单次胡牌总番 8 番封顶，对应 256 分基础胡牌值。",
+      "en": "K caps a single win at 8 fan, corresponding to 256 base win points."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "teaching-points",
+    "zh": "教学积分",
+    "en": "Teaching points",
+    "definition": {
+      "zh": "本应用用于练习和复盘的本地积分，不具备现实价值或联机匹配含义。",
+      "en": "Local points for practice and review in this app, with no real-world value or networked match meaning."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "score-settlement",
+    "zh": "结算",
+    "en": "Settlement",
+    "definition": {
+      "zh": "按 §K 解释谁因胡牌、杠分、花猪或查大叫向谁赔多少教学积分。",
+      "en": "The K-based explanation of who pays whom teaching points for wins, Kongs, flowery pig, or tenpai check."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "self-draw-bonus",
+    "zh": "自摸加底",
+    "en": "Self-draw base add-on",
+    "definition": {
+      "zh": "§K 自摸每笔胡牌在倍率分外加 2 分，不加番。",
+      "en": "Under K, self-draw adds 2 points to each win payment without adding fan."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "point-payment",
+    "zh": "点炮赔付",
+    "en": "Discard-win payment",
+    "definition": {
+      "zh": "点炮时由打出成胡牌的一家承担该手胡牌赔付。",
+      "en": "On a discard win, the discarder pays the win payment for that hand."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "multi-win",
+    "zh": "一炮多响",
+    "en": "Multiple wins on one discard",
+    "definition": {
+      "zh": "同一张舍牌让多人胡牌时，点炮者分别向每个胡牌家全额赔付。",
+      "en": "When one discard lets multiple players win, the discarder pays each winner separately."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "root",
+    "zh": "根",
+    "en": "Root",
+    "definition": {
+      "zh": "四张相同未作杠，胡牌时每根按 §K 加 1 番；龙七对自带四张时减 1 根。",
+      "en": "Four identical tiles not declared as a Kong; each root adds 1 fan under K, with Dragon seven pairs subtracting its built-in quad."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "no-terminals",
+    "zh": "断幺九",
+    "en": "No-terminals",
+    "definition": {
+      "zh": "整手胡牌不含 1 或 9，§K 计 1 番。",
+      "en": "A winning hand with no 1 or 9 tiles; K counts it as 1 fan."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "terminal-hand",
+    "zh": "带幺九",
+    "en": "Terminal-containing hand",
+    "definition": {
+      "zh": "全由含 1 或含 9 的连牌或幺九刻/对构成，§K 计 3 番。",
+      "en": "A hand built from terminal-containing runs or 1/9 triplets and pair; K counts it as 3 fan."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "pure-all-triplets",
+    "zh": "清对",
+    "en": "Pure all-triplets",
+    "definition": {
+      "zh": "清一色的对对胡，§K 计 4 番。",
+      "en": "A Pure suit All-triplets hand; K counts it as 4 fan."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "rank-pairs",
+    "zh": "将对",
+    "en": "All 2/5/8 triplets",
+    "definition": {
+      "zh": "全部由 2、5、8 的刻子/杠和将组成，§K 计 4 番。",
+      "en": "A triplet hand made only of 2, 5, and 8 ranks; K counts it as 4 fan."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "dragon-seven-pairs",
+    "zh": "龙七对",
+    "en": "Dragon seven pairs",
+    "definition": {
+      "zh": "暗七对中含四张相同，§K 计 5 番。",
+      "en": "A concealed Seven pairs hand containing four identical tiles; K counts it as 5 fan."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "pure-seven-pairs",
+    "zh": "清七对",
+    "en": "Pure seven pairs",
+    "definition": {
+      "zh": "清一色的七对，§K 计 5 番。",
+      "en": "A Pure suit Seven pairs hand; K counts it as 5 fan."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "pure-terminal-hand",
+    "zh": "清幺九",
+    "en": "Pure terminal hand",
+    "definition": {
+      "zh": "清一色的带幺九，§K 计 5 番。",
+      "en": "A Pure suit terminal-containing hand; K counts it as 5 fan."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "heavenly-hand",
+    "zh": "天胡",
+    "en": "Heavenly hand",
+    "definition": {
+      "zh": "庄家首次摸完即胡；§K 计 6 番，具体时机边界由牌桌状态标记。",
+      "en": "Dealer wins on the first draw; K counts it as 6 fan, with timing tracked by table state."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "earthly-hand",
+    "zh": "地胡",
+    "en": "Earthly hand",
+    "definition": {
+      "zh": "非庄第一轮摸牌即胡；§K 计 6 番，具体时机边界由牌桌状态标记。",
+      "en": "A non-dealer wins on the first-round draw; K counts it as 6 fan, with timing tracked by table state."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "remaining-counts",
+    "zh": "剩张",
+    "en": "Remaining counts",
+    "definition": {
+      "zh": "从可见牌中扣除每张牌已出现次数，估计牌墙和暗手里还剩几张。",
+      "en": "Counting visible tiles to estimate how many copies remain in the wall and hidden hands."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "weighted-waits",
+    "zh": "加权进张",
+    "en": "Weighted waits",
+    "definition": {
+      "zh": "不只数听几种牌，还按每种听牌剩余张数合计进张质量。",
+      "en": "Evaluating waits by remaining copy counts, not only by the number of wait types."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "wait-quality",
+    "zh": "听牌质量",
+    "en": "Wait quality",
+    "definition": {
+      "zh": "听牌宽度、剩张、风险和收益共同决定的听牌好坏。",
+      "en": "The quality of a ready hand based on width, remaining counts, risk, and return."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "risk-tile",
+    "zh": "危险牌",
+    "en": "Risk tile",
+    "definition": {
+      "zh": "较可能让别人胡或明显推进别人手牌的舍牌。",
+      "en": "A discard that is more likely to complete or strongly improve another player's hand."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "opponent-profile",
+    "zh": "对手画像",
+    "en": "Opponent profile",
+    "definition": {
+      "zh": "用稳健、激进、保守、牌效、均衡等倾向描述对手决策。",
+      "en": "A decision tendency such as steady, aggressive, conservative, efficiency-focused, or balanced."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "variant-rule",
+    "zh": "变体规则",
+    "en": "Variant rule",
+    "definition": {
+      "zh": "不同平台或桌规可能启用的非默认规则提示，本应用默认牌桌不启用。",
+      "en": "A non-default rule that may appear on some platforms or table rules; this app's default table does not enable it."
+    },
+    "source": "descriptive",
+    "review": true
+  },
+  {
+    "id": "review-method",
+    "zh": "复盘方法",
+    "en": "Review method",
+    "definition": {
+      "zh": "用事实、选择、结果和下一次计划来拆解一局牌。",
+      "en": "Reviewing a hand through facts, choices, results, and the next plan."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "expected-value",
+    "zh": "期望值",
+    "en": "Expected value",
+    "definition": {
+      "zh": "比较不同选择长期平均收益和风险的直觉框架。",
+      "en": "A framework for comparing the long-run average return and risk of choices."
+    },
+    "source": "standard",
+    "review": false
+  },
+  {
+    "id": "table-plan",
+    "zh": "整局规划",
+    "en": "Whole-hand plan",
+    "definition": {
+      "zh": "从定缺、速度、做牌方向、风险和结算收益共同安排一局。",
+      "en": "Planning a hand across voiding, speed, hand direction, risk, and settlement return."
+    },
+    "source": "descriptive",
+    "review": true
+  }
+]
